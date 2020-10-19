@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 }
 
 #bgVideo {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     width: auto;
@@ -38,22 +38,68 @@ body::-webkit-scrollbar {
 
 #ffcLogo {
     max-width: 100%;
-    position: fixed;
+    position: relative;
     width: 65px;
 }
 
 .hidden{
-    background-color: black;
-    height: 460px;
-    width: auto;
+    height: 340px;
+    width: 900px;
+    margin-left: 7vw;
     overflow: hidden;
+    font-family: 'Mulish', sans-serif;
+}
+
+.txtBox{
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 3vw;
+    height: 30vw;
+    width: 75%;
+    font-family: 'Mulish', sans-serif;
+}
+
+.txt{
+    margin: 5% 0 0 5%;
+}
+
+.serviceNumber{
+    color:rgb(89,91,91);
+    font-size: 18px;
+}
+
+.fa-arrow-right{
+    font-size: 18px;
+    margin-left: 15px;
+    opacity: 0;
+    transition: all 250ms;
+    transform: translateX(-10px);
+}
+
+.txt:hover .fa-arrow-right{
+    opacity: 1;
+    transition: all 250ms;
+    transform: translateX(0px);
+}
+
+.serviceTitle{
+    color: rgb(209, 209, 209);
+    font-size: 24px;
+}
+
+.serviceText{
+    color: rgb(209, 209, 209);
+    font-size: 15px;
 }
 
 #textSecA {
     font-size: 5vw;
     color: white;
-    font-weight: 600;
+    font-weight: 600px;
+    line-height: 1.1;
+    letter-spacing: 1.5px;
 }
+
+/* AnimationFrameClass */
 
 .fadeInLeft {
     margin-top: 40px;
@@ -63,10 +109,22 @@ body::-webkit-scrollbar {
 }
 
 .slideInUp {
-    margin-left: 5%;
     animation: slideInUp 1s;
     animation-fill-mode: both;
     animation-delay: 1s;
     position: relative;
 }
 
+.slideInUp2 {
+    animation: slideInUp2 1s;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+    position: relative;
+}
+
+.slideInUp3 {
+    animation: slideInUp3 1s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    position: relative;
+}

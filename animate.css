@@ -14,14 +14,34 @@
        opacity: 1;
        top:400px;
     }
-    25%{
-       opacity: 1;
-    }
     100% {
        opacity: 1;
-       top: 95px;
+       top: 80px;
     }
- }  
+}
+
+@keyframes slideInUp2 {
+   0% {
+      opacity: 1;
+      top:400px;
+   }
+   100% {
+      opacity: 1;
+      top: 0px;
+   }
+}
+
+@keyframes slideInUp3 {
+   0% {
+      opacity: 1;
+      top:400px;
+   }
+   100% {
+      opacity: 1;
+      top: 0px;
+   }
+}
+
 /* 
 @media screen and (max-width: 768px){
    .bgVideo{

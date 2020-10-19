@@ -10,27 +10,66 @@
     <link rel="stylesheet" href="animate.css">
     <link rel='shotcut icon' href="meterial/icon/cropped-fav-32x32.png" sizes="32*32">
     <link rel='shotcut icon' href="meterial/icon/cropped-fav-192x192.png" sizes="192*192">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
     <script rel="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
-<body onload="randomTXT()"> 
+<body onload="randomTXT()">
+    <video autoplay muted loop id="bgVideo">
+        <source src="meterial/video/webshort.mp4" type="video/mp4">
+    </video>
     <div class="sectionA">
-        <video autoplay muted loop id="bgVideo">
-            <source src="meterial/video/webshort.mp4" type="video/mp4">
-        </video>
         <a href="index.html">
             <img src="meterial/icon/ffclogo.png" alt="ffcLogo" class="fadeInLeft" id="ffcLogo">
         </a>
         <div class="hidden">
-            <p class="slideInUp" id="textSecA" ></p>
+            <p class="slideInUp" id="textSecA"></p>
         </div>
-        <div class=""></div>
+        <div class="txtBox slideInUp2">
+            <div class="row">
+                <div class="col-3 txt slideInUp3">
+                    <a>
+                        <!-- LINK flyfull/work -->
+                        <p class="serviceNumber">01</p>
+                        <p class="serviceTitle">Work <i class="fas fa-arrow-right"></i></p>
+                        <p class="serviceText">View our work and project insights</p>
+                    </a>
+                </div>
+                <div class="col-3 txt slideInUp3">
+                    <a>
+                        <!-- LINK flyfull/Approach -->
+                        <p class="serviceNumber">02</p>
+                        <p class="serviceTitle">Approach <i class="fas fa-arrow-right"></i></p>
+                        <p class="serviceText">Find out more about who we are</p>
+                    </a>
+                </div>
+                <div class="col-4 txt slideInUp3">
+                    <a>
+                        <!-- LINK flyfull/What we do -->
+                        <p class="serviceNumber">03</p>
+                        <p class="serviceTitle">What we do <i class="fas fa-arrow-right"></i></p>
+                        <p class="serviceText">See our full range of services we offer</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="sectionB blackBG"></div>
-    <div class="sectionC whiteBG"></div>
-    <div class="sectionD blackBG"></div>
-    <div class="sectionE whiteBG"></div>
+    <div class="sectionB whiteBG"></div>
+    <div class="sectionC blackBG"></div>
+    <div class="sectionD whiteBG"></div>
+    <div class="sectionE blackBG"></div>
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-
 function randomTXT(){
     var value = [
         `Building brands<br>
