@@ -1,0 +1,72 @@
+body{
+    margin: 0%;
+    height: auto;
+    width: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    font-family: 'Mulish', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none; /*Chrome, Safari and Opera*/
+}
+
+#bgVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    filter:brightness(50%);
+}
+
+.sectionA,.sectionB,.sectionC,.sectionD, .sectionE {
+    height: 100%;
+    width: auto;
+    position: relative;
+}
+
+.whiteBG {
+    background-color: white;
+}
+
+.blackBG {
+    background-color: black;
+}
+
+#ffcLogo {
+    max-width: 100%;
+    position: fixed;
+    width: 65px;
+}
+
+.hidden{
+    background-color: black;
+    height: 460px;
+    width: auto;
+    overflow: hidden;
+}
+
+#textSecA {
+    font-size: 5vw;
+    color: white;
+    font-weight: 600;
+}
+
+.fadeInLeft {
+    margin-top: 40px;
+    animation: fadeInLeft 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+.slideInUp {
+    margin-left: 5%;
+    animation: slideInUp 1s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    position: relative;
+}
+
