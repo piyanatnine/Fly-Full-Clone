@@ -12,20 +12,24 @@ body::-webkit-scrollbar {
 }
 
 #bgVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: auto;
     height: auto;
     min-width: 100%;
     min-height: 100%;
     filter:brightness(50%);
+    z-index: -1;
 }
 
 .sectionA,.sectionB,.sectionC,.sectionD, .sectionE {
-    height: 100%;
+    height: 100vh; 
     width: auto;
+    min-width: 100%;
+    min-height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .whiteBG {
@@ -43,23 +47,24 @@ body::-webkit-scrollbar {
 }
 
 .hidden{
-    height: 340px;
+    height: 350px;
     width: 900px;
     margin-left: 7vw;
     overflow: hidden;
-    font-family: 'Mulish', sans-serif;
 }
 
 .txtBox{
+    position: absolute;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.6);
-    margin-top: 3vw;
-    height: 30vw;
     width: 75%;
-    font-family: 'Mulish', sans-serif;
+    overflow: hidden;
+    margin-top: 2vw;
+    user-select: none; 
 }
 
 .txt{
-    margin: 5% 0 0 5%;
+    margin: 5% 0 5% 5%;
 }
 
 .serviceNumber{
@@ -94,15 +99,116 @@ body::-webkit-scrollbar {
 #textSecA {
     font-size: 5vw;
     color: white;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 1.1;
     letter-spacing: 1.5px;
+}
+
+.leftText{
+    position: absolute;
+    z-index: 999;
+    top: 3.5vmin;
+    right: 0vmin;
+    padding: 20px;
+}
+
+.leftText2{
+    font-weight: 400;
+    top: 40vmin;
+    position: absolute;
+    z-index: 999;
+    right: -12vmin;
+    padding: 20px;
+    transform: rotate(90deg);
+    color: rgb(251,251,251);
+    user-select: none;
+}
+
+.leftText2 p a{
+    color: rgb(251,251,251);
+    text-decoration: none;
+}
+
+.leftText2 p a.ig:hover{
+    color:rgb(218,120,145);
+    transition: all 0.5s ease;
+}
+
+.leftText2 p a.facebook:hover{
+    color: rgb(40,76,134);
+    transition: all 0.5s ease;
+}
+
+
+.menu p{
+    color: rgb(251,251,251);
+    display: inline-flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+    user-select: none;
+    transition: all .5s ease;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.menu ul.dots {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    vertical-align: middle;
+    transform-origin: center center;
+    transition: all .5s ease;
+}
+
+.menu ul.dots li {
+    height: 5px;
+    width: 5px;
+    background: #fff;
+    border-radius: 50%;
+    list-style: none;
+    opacity: 0.4;
+    content: none;
+}
+
+.menu ul.dots li.mid {
+    margin: 5px 0;
+    z-index: 1;
+    transition: all .5s ease;
+}
+
+.scrollLine{
+    position: absolute;
+    right: 8vmin;
+    bottom: 5%;
+    z-index: 4;
+    overflow: hidden;
+    width: 3px;
+    background: rgba(255, 255, 255, 0.5);
+    height: 8vw;
+}
+
+.scrollLine span{
+    position: relative;
+    display: block;
+    top: -8vw;
+    width: 100%;
+    height: 100%;
+    animation: landArrow 2s ease infinite;
+    animation-delay: 2s;
+    background: #fff;
 }
 
 /* AnimationFrameClass */
 
 .fadeInLeft {
-    margin-top: 40px;
+    margin-top: 3vw;
     animation: fadeInLeft 1s;
     animation-fill-mode: both;
     animation-delay: 0.5s;
@@ -119,12 +225,17 @@ body::-webkit-scrollbar {
     animation: slideInUp2 1s;
     animation-fill-mode: both;
     animation-delay: 1.5s;
-    position: relative;
 }
 
 .slideInUp3 {
     animation: slideInUp3 1s;
     animation-fill-mode: both;
     animation-delay: 2s;
-    position: relative;
+}
+
+.fadeIn{
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
 }
