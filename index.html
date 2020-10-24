@@ -17,6 +17,8 @@
 
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body onload="randomTXT()">
@@ -73,10 +75,21 @@
             <source src="meterial/video/webshort.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="sectionB whiteBG">02</div>
+    <div class="sectionB whiteBG ">
+        <div class="hidden2">
+            <p class="textSecB" data-aos="fade-up">
+                Bringing people and brands together<br>
+                through well planned web design and<br>
+                marketing
+            </p>
+        </div>
+    </div>
     <div class="sectionC blackBG">03</div>
     <div class="sectionD whiteBG">04</div>
     <div class="sectionE blackBG">05</div>
 </body>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({duration: 800, easing: 'ease'});
+</script>
 </html>

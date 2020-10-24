@@ -4,7 +4,7 @@ body{
     width: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    font-family: 'Mulish', sans-serif;
+
 }
 
 body::-webkit-scrollbar {
@@ -30,14 +30,17 @@ body::-webkit-scrollbar {
     min-height: 100%;
     position: relative;
     overflow: hidden;
+    font-family: 'Mulish', sans-serif;
 }
 
 .whiteBG {
     background-color: white;
+    color: black;
 }
 
 .blackBG {
     background-color: black;
+    color: white;
 }
 
 #ffcLogo {
@@ -139,7 +142,6 @@ body::-webkit-scrollbar {
     transition: all 0.5s ease;
 }
 
-
 .menu p{
     color: rgb(251,251,251);
     display: inline-flex;
@@ -204,6 +206,27 @@ body::-webkit-scrollbar {
     animation-delay: 2s;
     background: #fff;
 }
+
+/*sectionB*/
+
+.hidden2 {
+    position: relative;
+    height: auto;
+    width: auto;
+    top: 20vh;
+    left: 10vw;
+    overflow: hidden;
+}
+
+.textSecB {
+    font-size: 3.2vw;
+    color: black;
+    letter-spacing: 1.5px;
+    opacity: 1;
+}
+
+
+
 
 /* AnimationFrameClass */
 
