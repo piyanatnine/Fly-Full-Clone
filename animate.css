@@ -51,22 +51,11 @@
    }
 }
 
-@keyframes landArrow {
+@keyframes landArrowY {
    from {
       top: -100%;
    }
    to {
       top: 120%;
    }
-
 }
-/* 
-@media screen and (max-width: 768px){
-   .bgVideo{
-      top: 85vh;
-      transform: translate(-50%, -25%);
-      min-height: 55%;
-      height: 55%;
-      max-height: 55%;
-   }
-} */
