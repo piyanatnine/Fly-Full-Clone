@@ -1,0 +1,103 @@
+.whiteText {
+  color: white;
+}
+
+.topTxtBox {
+  margin-left: 10%;
+  margin-top: 5.36%;
+
+  animation: slideInUp 1s;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  position: relative;
+}
+
+.topTxtName {
+  font-size: 1.5em;
+}
+
+.topTxtEx {
+  font-size: 4.85vw;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+}
+
+.topImg {
+  position: absolute;
+  top: -17.27%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  filter: brightness(72%);
+  z-index: -1;
+}
+
+.explain {
+  padding: 12vh 0;
+}
+
+.explainTitle {
+  font-weight: 490;
+  margin-left: 13%;
+}
+
+.explainTxt {
+  font-weight: 350;
+  letter-spacing: normal;
+  width: 95%;
+  font-size: 16.5px !important;
+}
+
+a {
+  color: black !important;
+  font-weight: 350;
+  text-decoration: none !important;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 6em;
+  height: 1.5px;
+  left: 1em;
+  bottom: 0;
+  background: black;
+  border-radius: 5px;
+  transform: scaleX(1);
+  transition: 0.25s linear;
+}
+
+a:hover:before,
+a:focus:before {
+  visibility: visible;
+  animation: underlinedScroll 1.5s linear;
+}
+
+@keyframes underlinedScroll {
+  0% {
+    transform: scaleX(1);
+  }
+  25% {
+    transform: translateX(1em) scaleX(0.75);
+  }
+  40% {
+    transform: translateX(3em) scaleX(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  60% {
+    transform: translateX(-2em) scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
