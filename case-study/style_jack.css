@@ -34,7 +34,8 @@
 }
 
 .explain {
-  padding: 12vh 0;
+  padding-top: 12vh;
+  padding-bottom: 13vh;
 }
 
 .explainTitle {
@@ -100,4 +101,19 @@ a:focus:before {
   100% {
     transform: scale(1);
   }
+}
+
+.videoDiv {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 10vw 0;
+}
+
+.videoPlayer {
+  object-fit: contain;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
 }
