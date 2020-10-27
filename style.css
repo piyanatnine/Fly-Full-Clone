@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
     min-height: 100%;
     position: relative;
     overflow: hidden;
-    font-family: 'Mulish', sans-serif;
+    font-family: "Mulish", sans-serif;
 }
 
 .whiteBG {
@@ -164,49 +164,6 @@ body::-webkit-scrollbar {
     transition: all 0.5s ease;
 }
 
-.menu p {
-    color: rgb(251, 251, 251);
-    display: inline-flex;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 10px;
-    user-select: none;
-    transition: all .5s ease;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
-
-.menu ul.dots {
-    margin: 0;
-    padding: 0;
-    border: none;
-    font-size: 0;
-    display: inline-flex;
-    flex-direction: column;
-    height: 100%;
-    vertical-align: middle;
-    transform-origin: center center;
-    transition: all .5s ease;
-}
-
-.menu ul.dots li {
-    height: 5px;
-    width: 5px;
-    background: #fff;
-    border-radius: 50%;
-    list-style: none;
-    opacity: 0.4;
-    content: none;
-}
-
-.menu ul.dots li.mid {
-    margin: 5px 0;
-    z-index: 1;
-    transition: all .5s ease;
-}
-
 .scrollLine {
     position: absolute;
     right: 8vmin;
@@ -305,19 +262,19 @@ body::-webkit-scrollbar {
 }
 
 .motionLine::after {
-    content: '';
+    content: "";
     transform: rotate(180deg);
     margin-top: 5px;
     display: block;
     width: 100%;
     height: 2px;
     background: white;
-    transition: width .3s;
+    transition: width 0.3s;
 }
 
 
 /* .motionLine:hover::after {
-    width: 0%;
+  width: 0%;
 } */
 
 .motionLine:hover {
@@ -388,8 +345,8 @@ body::-webkit-scrollbar {
 .sectionC .workImg .workGif img {
     max-width: 100%;
     /* transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
-    will-change: transform;
-    transform: translate3d(0px, 120px, 0px); */
+  will-change: transform;
+  transform: translate3d(0px, 120px, 0px); */
 }
 
 
