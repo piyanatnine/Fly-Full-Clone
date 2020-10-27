@@ -201,22 +201,53 @@ a:focus:before {
 }
 
 .scrollTextBar {
-  animation: scrollTxt 15s linear 0s infinite;
+  /*animation: scrollTxt 38s linear 0s infinite;*/
   font-size: 9vw;
-  position: relative;
-  width: 100%;
+  display: flex;
+  width: fit-content !important;
   overflow: hidden;
-  padding-top: 8vw;
-  padding-bottom: 8vw;
-  height: 26vw;
+  height: 12vw;
   color: #000000;
+  white-space: nowrap;
+  left: 100%;
+  padding: 0;
+  list-style: none;
+  white-space: pre;
+}
+
+.scrollTextCover {
+  overflow: hidden;
+  position: relative;
+  padding-top: 7vw;
+  padding-bottom: 6vw;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+.scrollTextBar li:nth-child(1) {
+  animation: scrollTxt 32s linear 0s infinite;
+}
+.scrollTextBar li:nth-child(2) {
+  animation: scrollTxt2 32s linear 16s infinite;
 }
 
 @keyframes scrollTxt {
   0% {
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollTxt2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
   }
 }
 
