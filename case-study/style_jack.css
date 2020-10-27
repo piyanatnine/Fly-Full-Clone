@@ -63,7 +63,7 @@ a {
   -moz-box-sizing: border-box;
 }
 
-a:before {
+#underlinedLinkCover a:before {
   content: "";
   position: absolute;
   width: 6em;
@@ -254,12 +254,53 @@ a:focus:before {
 .footerHeader {
   font-size: 2.2vw;
   font-weight: 600;
-  margin: 1vw 0 1vw;
+  margin-bottom: 2vw;
   line-height: 1.2;
 }
 
 .footerMailTxt {
   font-size: 3vw !important;
-  margin: 2.5vw 0 4vw !important;
   color: white !important;
+}
+
+.footerMailCover {
+  margin-left: 7vw;
+  padding-bottom: 7vw;
+}
+
+.footerLinks {
+  list-style: none;
+  margin-left: -10%;
+  text-align: left;
+}
+
+.footerLinks li a {
+  float: left;
+  margin-right: 2em;
+  color: white !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .topImg {
+    top: 0%;
+    left: -40%;
+    width: auto;
+    height: auto;
+  }
+
+  .longImg {
+    margin-bottom: 0;
+  }
+  .infoWithLongImg {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footerLinks {
+    margin-left: 0%;
+  }
+  .explain {
+    padding-top: 2vh;
+  }
 }
