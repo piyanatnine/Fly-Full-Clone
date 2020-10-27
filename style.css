@@ -1,13 +1,16 @@
-body{
+body {
     margin: 0%;
     height: auto;
     width: auto;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 body::-webkit-scrollbar {
-    display: none; /*Chrome, Safari and Opera*/
+    display: none;
+    /*Chrome, Safari and Opera*/
 }
 
 #bgVideo {
@@ -18,32 +21,38 @@ body::-webkit-scrollbar {
     height: auto;
     min-width: 100%;
     min-height: 100%;
-    filter:brightness(50%);
+    filter: brightness(50%);
     z-index: -1;
 }
 
 .sectionA {
-    height: 100vh; 
-    width: auto;
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
-    overflow: hidden;
-    font-family: 'Mulish', sans-serif;
+    height: 100vh !important;
 }
 
-.sectionB, .sectionE, .sectionC,.sectionD{
-    height: 120vh; 
+.sectionB {
+    height: 120vh !important;
+}
+
+.sectionC {
+    height: 220vh;
+}
+
+.sectionD,
+.sectionE {
+    height: 160vh;
+}
+
+.sectionA,
+.sectionB,
+.sectionC,
+.sectionD,
+.sectionE {
     width: auto;
     min-width: 100%;
     min-height: 100%;
     position: relative;
     overflow: hidden;
     font-family: 'Mulish', sans-serif;
-}
- 
-.sectionC,.sectionD{
-    height: 200vh !important;
 }
 
 .whiteBG {
@@ -52,7 +61,7 @@ body::-webkit-scrollbar {
 }
 
 .blackBG {
-    background-color: rgb(26,26,26);
+    background-color: rgb(26, 26, 26);
     color: white;
 }
 
@@ -62,33 +71,33 @@ body::-webkit-scrollbar {
     width: 65px;
 }
 
-.hidden{
+.hidden {
     height: 350px;
     width: 900px;
     margin-left: 7vw;
     overflow: hidden;
 }
 
-.txtBox{
+.txtBox {
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
     width: 75%;
     overflow: hidden;
     margin-top: 2vw;
-    user-select: none; 
+    user-select: none;
 }
 
-.txt{
+.txt {
     margin: 5% 0 5% 5%;
 }
 
-.serviceNumber{
-    color:rgb(89,91,91);
+.serviceNumber {
+    color: rgb(89, 91, 91);
     font-size: 18px;
 }
 
-.fa-arrow-right{
+.fa-arrow-right {
     font-size: 18px;
     margin-left: 15px;
     opacity: 0;
@@ -102,12 +111,12 @@ body::-webkit-scrollbar {
     transform: translateX(0px);
 }
 
-.serviceTitle{
+.serviceTitle {
     color: rgb(209, 209, 209);
     font-size: 24px;
 }
 
-.serviceText{
+.serviceText {
     color: rgb(209, 209, 209);
     font-size: 15px;
 }
@@ -120,7 +129,7 @@ body::-webkit-scrollbar {
     letter-spacing: 1.5px;
 }
 
-.leftText{
+.leftText {
     position: absolute;
     z-index: 999;
     top: 3.5vmin;
@@ -128,7 +137,7 @@ body::-webkit-scrollbar {
     padding: 20px;
 }
 
-.leftText2{
+.leftText2 {
     font-weight: 400;
     top: 40vmin;
     position: absolute;
@@ -136,27 +145,27 @@ body::-webkit-scrollbar {
     right: -12vmin;
     padding: 20px;
     transform: rotate(90deg);
-    color: rgb(251,251,251);
+    color: rgb(251, 251, 251);
     user-select: none;
 }
 
-.leftText2 p a{
-    color: rgb(251,251,251);
+.leftText2 p a {
+    color: rgb(251, 251, 251);
     text-decoration: none;
 }
 
-.leftText2 p a.ig:hover{
-    color:rgb(218,120,145);
+.leftText2 p a.ig:hover {
+    color: rgb(218, 120, 145);
     transition: all 0.5s ease;
 }
 
-.leftText2 p a.facebook:hover{
-    color: rgb(40,76,134);
+.leftText2 p a.facebook:hover {
+    color: rgb(40, 76, 134);
     transition: all 0.5s ease;
 }
 
-.menu p{
-    color: rgb(251,251,251);
+.menu p {
+    color: rgb(251, 251, 251);
     display: inline-flex;
     height: 100%;
     justify-content: center;
@@ -198,7 +207,7 @@ body::-webkit-scrollbar {
     transition: all .5s ease;
 }
 
-.scrollLine{
+.scrollLine {
     position: absolute;
     right: 8vmin;
     bottom: 5%;
@@ -209,7 +218,7 @@ body::-webkit-scrollbar {
     height: 8vw;
 }
 
-.scrollLine span{
+.scrollLine span {
     position: relative;
     display: block;
     top: -8vw;
@@ -219,6 +228,7 @@ body::-webkit-scrollbar {
     animation-delay: 2s;
     background: #fff;
 }
+
 
 /*sectionB*/
 
@@ -244,13 +254,13 @@ body::-webkit-scrollbar {
     transition: 800ms all ease-out;
 }
 
-@media screen and (max-width: 991px){
-    .txt_2{
+@media screen and (max-width: 991px) {
+    .txt_2 {
         top: 30vh;
         margin-top: 20px;
     }
-
-    .txt_1, .txt_2{
+    .txt_1,
+    .txt_2 {
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -270,19 +280,13 @@ body::-webkit-scrollbar {
     line-height: 1.8;
 }
 
+
 /*sectionC*/
-.numPage {
-    position: relative;
-    color: rgb(37,37,37);
-    font-size: 18vw;
-    font-weight: 500;
-    letter-spacing: 20px;
-}
 
 .leftText3 {
     position: relative;
     width: 32vw;
-    top: 25vh;
+    top: 15vh;
     right: -60vw;
 }
 
@@ -293,12 +297,11 @@ body::-webkit-scrollbar {
 .leftText3 .ltInfo {
     font-size: 17px;
     line-height: 1.8;
-    
 }
 
-.motionLine{
+.motionLine {
     display: inline-block;
-    color: rgb(209, 209, 209);
+    color: white;
 }
 
 .motionLine::after {
@@ -307,10 +310,11 @@ body::-webkit-scrollbar {
     margin-top: 5px;
     display: block;
     width: 100%;
-    height: 3px;
-    background: rgb(209, 209, 209);
+    height: 2px;
+    background: white;
     transition: width .3s;
 }
+
 
 /* .motionLine:hover::after {
     width: 0%;
@@ -318,7 +322,73 @@ body::-webkit-scrollbar {
 
 .motionLine:hover {
     text-decoration: none;
-    color: rgb(209, 209, 209);
+    color: white;
+}
+
+.numPage {
+    position: relative;
+    color: rgb(37, 37, 37);
+    font-size: 18vw;
+    font-weight: 500;
+    letter-spacing: 2px;
+    z-index: 6;
+}
+
+.top01 {
+    background-color: indianred;
+    padding-top: 0%;
+}
+
+.sectionC .namePage {
+    z-index: 7;
+    font-size: 15vh;
+    position: relative;
+    left: 10.5vw;
+}
+
+.sectionC .scope {
+    list-style: none;
+    font-size: 20px;
+    line-height: 2;
+    left: 16.5vw;
+    position: relative;
+    margin-top: 20px;
+}
+
+.sectionC .workImg {
+    position: relative;
+    text-align: right;
+    margin: -8vw 0 0;
+    transition: 600ms all ease;
+}
+
+.sectionC .workImg .workImgPlacement {
+    width: 60%;
+    display: inline-block;
+    position: relative;
+}
+
+.sectionC .workImg .workImgPlacement .amitech {
+    background-image: url(meterial/picture/main/Amitech_IT/amitech.png);
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.sectionC .workImg .workGif {
+    position: absolute;
+    top: 40%;
+    width: 30vw;
+    transform: translate(50%, 10%);
+    height: auto;
+}
+
+.sectionC .workImg .workGif img {
+    max-width: 100%;
+    /* transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+    will-change: transform;
+    transform: translate3d(0px, 120px, 0px); */
 }
 
 
@@ -350,7 +420,7 @@ body::-webkit-scrollbar {
     animation-delay: 2s;
 }
 
-.fadeIn{
+.fadeIn {
     opacity: 0;
     animation: fadeIn 3s;
     animation-fill-mode: both;
