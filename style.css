@@ -1,358 +1,318 @@
-body{
-    margin: 0%;
-    height: auto;
-    width: auto;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+body {
+  margin: 0%;
+  height: auto;
+  width: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 body::-webkit-scrollbar {
-    display: none; /*Chrome, Safari and Opera*/
+  display: none; /*Chrome, Safari and Opera*/
 }
 
 #bgVideo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    filter:brightness(50%);
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  filter: brightness(50%);
+  z-index: -1;
 }
 
 .sectionA {
-    height: 100vh; 
-    width: auto;
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
-    overflow: hidden;
-    font-family: 'Mulish', sans-serif;
+  height: 100vh;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: "Mulish", sans-serif;
 }
 
-.sectionB, .sectionE, .sectionC,.sectionD{
-    height: 120vh; 
-    width: auto;
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
-    overflow: hidden;
-    font-family: 'Mulish', sans-serif;
+.sectionB,
+.sectionE,
+.sectionC,
+.sectionD {
+  height: 120vh;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: "Mulish", sans-serif;
 }
- 
-.sectionC,.sectionD{
-    height: 200vh !important;
+
+.sectionC,
+.sectionD {
+  height: 200vh !important;
 }
 
 .whiteBG {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .blackBG {
-    background-color: rgb(26,26,26);
-    color: white;
+  background-color: rgb(26, 26, 26);
+  color: white;
 }
 
 #ffcLogo {
-    max-width: 100%;
-    position: relative;
-    width: 65px;
+  max-width: 100%;
+  position: relative;
+  width: 65px;
 }
 
-.hidden{
-    height: 350px;
-    width: 900px;
-    margin-left: 7vw;
-    overflow: hidden;
+.hidden {
+  height: 350px;
+  width: 900px;
+  margin-left: 7vw;
+  overflow: hidden;
 }
 
-.txtBox{
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    width: 75%;
-    overflow: hidden;
-    margin-top: 2vw;
-    user-select: none; 
+.txtBox {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 75%;
+  overflow: hidden;
+  margin-top: 2vw;
+  user-select: none;
 }
 
-.txt{
-    margin: 5% 0 5% 5%;
+.txt {
+  margin: 5% 0 5% 5%;
 }
 
-.serviceNumber{
-    color:rgb(89,91,91);
-    font-size: 18px;
+.serviceNumber {
+  color: rgb(89, 91, 91);
+  font-size: 18px;
 }
 
-.fa-arrow-right{
-    font-size: 18px;
-    margin-left: 15px;
-    opacity: 0;
-    transition: all 250ms;
-    transform: translateX(-10px);
+.fa-arrow-right {
+  font-size: 18px;
+  margin-left: 15px;
+  opacity: 0;
+  transition: all 250ms;
+  transform: translateX(-10px);
 }
 
 .txt:hover .fa-arrow-right {
-    opacity: 1;
-    transition: all 250ms;
-    transform: translateX(0px);
+  opacity: 1;
+  transition: all 250ms;
+  transform: translateX(0px);
 }
 
-.serviceTitle{
-    color: rgb(209, 209, 209);
-    font-size: 24px;
+.serviceTitle {
+  color: rgb(209, 209, 209);
+  font-size: 24px;
 }
 
-.serviceText{
-    color: rgb(209, 209, 209);
-    font-size: 15px;
+.serviceText {
+  color: rgb(209, 209, 209);
+  font-size: 15px;
 }
 
 #textSecA {
-    font-size: 5vw;
-    color: white;
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: 1.5px;
+  font-size: 5vw;
+  color: white;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
 }
 
-.leftText{
-    position: absolute;
-    z-index: 999;
-    top: 3.5vmin;
-    right: 0vmin;
-    padding: 20px;
+.leftText {
+  position: absolute;
+  z-index: 999;
+  top: 3.5vmin;
+  right: 0vmin;
+  padding: 20px;
 }
 
-.leftText2{
-    font-weight: 400;
-    top: 40vmin;
-    position: absolute;
-    z-index: 999;
-    right: -12vmin;
-    padding: 20px;
-    transform: rotate(90deg);
-    color: rgb(251,251,251);
-    user-select: none;
+.leftText2 {
+  font-weight: 400;
+  top: 40vmin;
+  position: absolute;
+  z-index: 999;
+  right: -12vmin;
+  padding: 20px;
+  transform: rotate(90deg);
+  color: rgb(251, 251, 251);
+  user-select: none;
 }
 
-.leftText2 p a{
-    color: rgb(251,251,251);
-    text-decoration: none;
+.leftText2 p a {
+  color: rgb(251, 251, 251);
+  text-decoration: none;
 }
 
-.leftText2 p a.ig:hover{
-    color:rgb(218,120,145);
-    transition: all 0.5s ease;
+.leftText2 p a.ig:hover {
+  color: rgb(218, 120, 145);
+  transition: all 0.5s ease;
 }
 
-.leftText2 p a.facebook:hover{
-    color: rgb(40,76,134);
-    transition: all 0.5s ease;
+.leftText2 p a.facebook:hover {
+  color: rgb(40, 76, 134);
+  transition: all 0.5s ease;
 }
 
-.menu p{
-    color: rgb(251,251,251);
-    display: inline-flex;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 10px;
-    user-select: none;
-    transition: all .5s ease;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 500;
+.scrollLine {
+  position: absolute;
+  right: 8vmin;
+  bottom: 5%;
+  z-index: 4;
+  overflow: hidden;
+  width: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  height: 8vw;
 }
 
-.menu ul.dots {
-    margin: 0;
-    padding: 0;
-    border: none;
-    font-size: 0;
-    display: inline-flex;
-    flex-direction: column;
-    height: 100%;
-    vertical-align: middle;
-    transform-origin: center center;
-    transition: all .5s ease;
-}
-
-.menu ul.dots li {
-    height: 5px;
-    width: 5px;
-    background: #fff;
-    border-radius: 50%;
-    list-style: none;
-    opacity: 0.4;
-    content: none;
-}
-
-.menu ul.dots li.mid {
-    margin: 5px 0;
-    z-index: 1;
-    transition: all .5s ease;
-}
-
-.scrollLine{
-    position: absolute;
-    right: 8vmin;
-    bottom: 5%;
-    z-index: 4;
-    overflow: hidden;
-    width: 3px;
-    background: rgba(255, 255, 255, 0.5);
-    height: 8vw;
-}
-
-.scrollLine span{
-    position: relative;
-    display: block;
-    top: -8vw;
-    width: 100%;
-    height: 100%;
-    animation: landArrow 2s ease infinite;
-    animation-delay: 2s;
-    background: #fff;
+.scrollLine span {
+  position: relative;
+  display: block;
+  top: -8vw;
+  width: 100%;
+  height: 100%;
+  animation: landArrow 2s ease infinite;
+  animation-delay: 2s;
+  background: #fff;
 }
 
 /*sectionB*/
 
 .txt_1 {
-    position: relative;
-    height: auto;
-    width: 60%;
-    font-weight: 800;
-    top: 25vh;
-    left: 5.5vw;
-    word-break: break-word;
-    margin-right: 10%;
+  position: relative;
+  height: auto;
+  width: 60%;
+  font-weight: 800;
+  top: 25vh;
+  left: 5.5vw;
+  word-break: break-word;
+  margin-right: 10%;
 }
 
 .txt_2 {
-    padding-right: 5.5vw;
-    height: auto;
-    position: relative;
-    font-style: normal;
-    font-weight: 500;
-    top: 40vh;
-    left: 5.5vw;
-    transition: 800ms all ease-out;
+  padding-right: 5.5vw;
+  height: auto;
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  top: 40vh;
+  left: 5.5vw;
+  transition: 800ms all ease-out;
 }
 
-@media screen and (max-width: 991px){
-    .txt_2{
-        top: 30vh;
-        margin-top: 20px;
-    }
+@media screen and (max-width: 991px) {
+  .txt_2 {
+    top: 30vh;
+    margin-top: 20px;
+  }
 
-    .txt_1, .txt_2{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+  .txt_1,
+  .txt_2 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 .textSecB_1 {
-    color: black;
-    letter-spacing: 1.5px;
-    opacity: 1;
-    font-weight: 600;
+  color: black;
+  letter-spacing: 1.5px;
+  opacity: 1;
+  font-weight: 600;
 }
 
 .textSecB_2 {
-    color: black;
-    opacity: 1;
-    font-weight: 500;
-    line-height: 1.8;
+  color: black;
+  opacity: 1;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
 /*sectionC*/
 .numPage {
-    position: relative;
-    color: rgb(37,37,37);
-    font-size: 18vw;
-    font-weight: 500;
-    letter-spacing: 20px;
+  position: relative;
+  color: rgb(37, 37, 37);
+  font-size: 18vw;
+  font-weight: 500;
+  letter-spacing: 20px;
 }
 
 .leftText3 {
-    position: relative;
-    width: 32vw;
-    top: 25vh;
-    right: -60vw;
+  position: relative;
+  width: 32vw;
+  top: 25vh;
+  right: -60vw;
 }
 
 .leftText3 .ltTitle {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .leftText3 .ltInfo {
-    font-size: 17px;
-    line-height: 1.8;
-    
+  font-size: 17px;
+  line-height: 1.8;
 }
 
-.motionLine{
-    display: inline-block;
-    color: rgb(209, 209, 209);
+.motionLine {
+  display: inline-block;
+  color: rgb(209, 209, 209);
 }
 
 .motionLine::after {
-    content: '';
-    transform: rotate(180deg);
-    margin-top: 5px;
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: rgb(209, 209, 209);
-    transition: width .3s;
+  content: "";
+  transform: rotate(180deg);
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: rgb(209, 209, 209);
+  transition: width 0.3s;
 }
 
 /* .motionLine:hover::after {
-    width: 0%;
+  width: 0%;
 } */
 
 .motionLine:hover {
-    text-decoration: none;
-    color: rgb(209, 209, 209);
+  text-decoration: none;
+  color: rgb(209, 209, 209);
 }
-
 
 /* AnimationFrameClass */
 
 .fadeInLeft {
-    margin-top: 3vw;
-    animation: fadeInLeft 1s;
-    animation-fill-mode: both;
-    animation-delay: 0.5s;
+  margin-top: 3vw;
+  animation: fadeInLeft 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
 }
 
 .slideInUp {
-    animation: slideInUp 1s;
-    animation-fill-mode: both;
-    animation-delay: 1s;
-    position: relative;
+  animation: slideInUp 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  position: relative;
 }
 
 .slideInUp2 {
-    animation: slideInUp2 1s;
-    animation-fill-mode: both;
-    animation-delay: 1.5s;
+  animation: slideInUp2 1s;
+  animation-fill-mode: both;
+  animation-delay: 1.5s;
 }
 
 .slideInUp3 {
-    animation: slideInUp3 1s;
-    animation-fill-mode: both;
-    animation-delay: 2s;
+  animation: slideInUp3 1s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
 }
 
-.fadeIn{
-    opacity: 0;
-    animation: fadeIn 3s;
-    animation-fill-mode: both;
-    animation-delay: 3s;
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 3s;
+  animation-fill-mode: both;
+  animation-delay: 3s;
 }
