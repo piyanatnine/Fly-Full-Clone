@@ -335,8 +335,9 @@ body::-webkit-scrollbar {
 }
 
 .top01 {
-    background-color: indianred;
     padding-top: 0%;
+    position: relative;
+    height: 30%;
 }
 
 .sectionC .namePage {
@@ -344,6 +345,7 @@ body::-webkit-scrollbar {
     font-size: 15vh;
     position: relative;
     left: 10.5vw;
+    top: -30vh;
 }
 
 .sectionC .scope {
@@ -352,7 +354,6 @@ body::-webkit-scrollbar {
     line-height: 2;
     left: 16.5vw;
     position: relative;
-    margin-top: 20px;
 }
 
 .sectionC .workImg {
