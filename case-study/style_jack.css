@@ -275,7 +275,7 @@ a:focus:before {
 }
 
 .footerMailCover {
-  margin-left: 7vw;
+  padding-left: 8vw;
   padding-bottom: 7vw;
 }
 
@@ -283,6 +283,7 @@ a:focus:before {
   list-style: none;
   margin-left: -8%;
   text-align: left;
+  font-size: 1.5em;
 }
 
 .footerLinks li a {
@@ -314,6 +315,10 @@ a:focus:before {
   .footerLegals {
     margin-left: 0%;
   }
+  .footerSocials {
+    margin-top: 0%;
+    margin-right: 0%;
+  }
   .explain {
     padding-top: 2vh;
   }
@@ -339,11 +344,13 @@ a:focus:before {
   list-style: none;
   float: right;
   color: #3fc7f2 !important;
+  margin-top: -8%;
+  margin-right: -8%;
 }
 
 .footerSocials li {
   float: left;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 a.footerSocialLinks {
@@ -354,4 +361,8 @@ a.footerSocialLinks {
 a.footerSocialLinks:visited {
   text-decoration: none !important;
   color: #3fc7f2 !important;
+}
+
+footer.almostBlack {
+  padding-bottom: 3%;
 }
