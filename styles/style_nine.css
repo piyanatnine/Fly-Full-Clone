@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
 
 .sectionD,
 .sectionE {
-    height: 160vh;
+    height: 200vh;
 }
 
 .sectionA,
@@ -183,9 +183,9 @@ body::-webkit-scrollbar {
     top: -8vw;
     width: 100%;
     height: 100%;
-    animation: landArrow 2s ease infinite;
+    animation: landArrowY 2s ease infinite;
     animation-delay: 2s;
-    background: #fff;
+    background: white;
 }
 
 
@@ -345,6 +345,110 @@ body::-webkit-scrollbar {
 }
 
 .sectionC .workImg .workGif img {
+    max-width: 100%;
+    /* transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+  will-change: transform;
+  transform: translate3d(0px, 120px, 0px); */
+}
+
+
+/*sectionD*/
+
+.sectionD .namePage {
+    font-size: 7vw;
+    z-index: 7;
+    position: relative;
+    right: -40vmin;
+    top: -28vh;
+}
+
+.sectionD .scope {
+    list-style: none;
+    font-size: 22px;
+    line-height: 2;
+    left: 60vw;
+    top: -15vh;
+    position: relative;
+}
+
+.sectionD .workImg .workImgPlacement {
+    width: 60%;
+    top: -45vh;
+    display: inline-block;
+    position: relative;
+}
+
+.sectionD .workImg .workImgPlacement .Wedding {
+    background-image: url(../materials/picture/main/Wedding_Cinema_Club/wedding.png);
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.sectionD .workImg .workJPG {
+    position: absolute;
+    top: 55%;
+    right: 10vw;
+    width: 35vw;
+}
+
+.sectionD .workImg .workJPG img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+
+/*SectionE*/
+
+.sectionE .namePage {
+    font-size: 7vw;
+    z-index: 7;
+    position: relative;
+    right: -20vmin;
+    top: -28vh;
+}
+
+.sectionE .scope {
+    list-style: none;
+    font-size: 22px;
+    line-height: 2;
+    left: 16vw;
+    top: -15vh;
+    position: relative;
+}
+
+.sectionE .workImg {
+    position: relative;
+    text-align: right;
+    margin: -16vw 0 0;
+    transition: 600ms all ease;
+}
+
+.sectionE .workImg .workImgPlacement {
+    width: 60%;
+    display: inline-block;
+    position: relative;
+}
+
+.sectionE .workImg .workImgPlacement .stuff {
+    background-image: url(../materials/picture/main/The_Good_Stuff/thegoodstuff_big_pigture.jpg);
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.sectionE .workImg .workGif {
+    position: absolute;
+    top: 42%;
+    width: 30vw;
+    right: 52%;
+    height: auto;
+}
+
+.sectionE .workImg .workGif img {
     max-width: 100%;
     /* transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
   will-change: transform;
