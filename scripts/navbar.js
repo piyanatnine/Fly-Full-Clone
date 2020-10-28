@@ -8,9 +8,9 @@ window.addEventListener('scroll', function(){
 
 window.addEventListener("scroll", function(event) {
     if(up && document.body.getBoundingClientRect().top != 0){
-        document.getElementById("navBar").setAttribute("style", "visibility: visible; animation: showNav 0.5s linear;");
+        document.getElementById("navBar").setAttribute("style", "visibility: visible; margin-top: 0;");
     }
     else{
-        document.getElementById("navBar").setAttribute("style", "animation: hideNav 0.5s linear;");
+        document.getElementById("navBar").setAttribute("style", "visibility: hidden; margin-top: -5vw;");
     }
   });
