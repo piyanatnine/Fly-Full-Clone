@@ -1,12 +1,5 @@
 //For scroll with long image, please reload page to test responsive design
-
-var scrollPos = 0;
-var up = false;
-window.addEventListener('scroll', function(){
-  if ((document.body.getBoundingClientRect()).top > scrollPos) up = true;
-	else up = false;
-	scrollPos = (document.body.getBoundingClientRect()).top;
-});
+//Uses up from navbar.js
 
 window.addEventListener("scroll", function(event) {
     var toBeFixed = document.getElementById("infoToBeFixed");
