@@ -1,3 +1,11 @@
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+a:visited {
+  text-decoration: none !important;
+}
+
 .whiteText {
   color: white;
 }
@@ -50,9 +58,12 @@
   font-size: 16.5px !important;
 }
 
-a {
+#underlinedLinkCover a {
   color: black !important;
   font-weight: 350;
+}
+
+a {
   text-decoration: none !important;
 }
 
@@ -270,7 +281,7 @@ a:focus:before {
 
 .footerLinks {
   list-style: none;
-  margin-left: -10%;
+  margin-left: -8%;
   text-align: left;
 }
 
@@ -300,7 +311,47 @@ a:focus:before {
   .footerLinks {
     margin-left: 0%;
   }
+  .footerLegals {
+    margin-left: 0%;
+  }
   .explain {
     padding-top: 2vh;
   }
+}
+
+.footerLegals {
+  list-style: none;
+  margin-left: -15%;
+  padding: 0;
+  text-align: left;
+}
+
+.footerLegals li {
+  float: left;
+  margin-right: 10px;
+  color: white !important;
+}
+
+.footerLegals li a {
+  color: rgb(179, 179, 179) !important;
+}
+.footerSocials {
+  list-style: none;
+  float: right;
+  color: #3fc7f2 !important;
+}
+
+.footerSocials li {
+  float: left;
+  margin-left: 10px;
+}
+
+a.footerSocialLinks {
+  text-decoration: none !important;
+  color: #3fc7f2 !important;
+}
+
+a.footerSocialLinks:visited {
+  text-decoration: none !important;
+  color: #3fc7f2 !important;
 }
