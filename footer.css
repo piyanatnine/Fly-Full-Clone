@@ -1,0 +1,156 @@
+.almostBlack {
+  background-color: #1a1a1a;
+}
+
+.scrollTextBar {
+  /*animation: scrollTxt 38s linear 0s infinite;*/
+  font-size: 9vw;
+  display: flex;
+  width: fit-content !important;
+  overflow: hidden;
+  height: 12vw;
+  color: #000000;
+  white-space: nowrap;
+  left: 100%;
+  padding: 0;
+  list-style: none;
+  white-space: pre;
+}
+
+.scrollTextCover {
+  overflow: hidden;
+  position: relative;
+  padding-top: 7vw;
+  padding-bottom: 6vw;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
+.scrollTextBar li:nth-child(1) {
+  animation: scrollTxt 32s linear 0s infinite;
+}
+.scrollTextBar li:nth-child(2) {
+  animation: scrollTxt2 32s linear 16s infinite;
+}
+
+@keyframes scrollTxt {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollTxt2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.footerHeader {
+  font-size: 2.2vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+  line-height: 1.2;
+}
+
+.footerMailTxt {
+  font-size: 3vw !important;
+  color: white !important;
+}
+
+.footerMailCover {
+  padding-left: 8vw;
+  padding-bottom: 7vw;
+}
+
+.footerLinks {
+  list-style: none;
+  margin-left: -8%;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.footerLinks li a {
+  float: left;
+  margin-right: 2em;
+  color: white !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .topImg {
+    top: 0%;
+    left: -40%;
+    width: auto;
+    height: auto;
+  }
+
+  .longImg {
+    margin-bottom: 0;
+  }
+  .infoWithLongImg {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footerLinks {
+    margin-left: 0%;
+  }
+  .footerLegals {
+    margin-left: 0%;
+  }
+  .footerSocials {
+    margin-top: 0%;
+    margin-right: 0%;
+  }
+}
+
+.footerLegals {
+  list-style: none;
+  margin-left: -15%;
+  padding: 0;
+  text-align: left;
+}
+
+.footerLegals li {
+  float: left;
+  margin-right: 10px;
+  color: white !important;
+}
+
+.footerLegals li a {
+  color: rgb(179, 179, 179) !important;
+}
+.footerSocials {
+  list-style: none;
+  float: right;
+  color: #3fc7f2 !important;
+  margin-top: -8%;
+  margin-right: -8%;
+}
+
+.footerSocials li {
+  float: left;
+  margin-right: 10px;
+}
+
+a.footerSocialLinks {
+  text-decoration: none !important;
+  color: #3fc7f2 !important;
+}
+
+a.footerSocialLinks:visited {
+  text-decoration: none !important;
+  color: #3fc7f2 !important;
+}
+
+footer.almostBlack {
+  padding-bottom: 3%;
+}
