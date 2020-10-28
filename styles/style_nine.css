@@ -25,7 +25,8 @@ body::-webkit-scrollbar {
     z-index: -1;
 }
 
-.sectionA {
+.sectionA,
+.sectionF {
     height: 100vh !important;
 }
 
@@ -46,7 +47,8 @@ body::-webkit-scrollbar {
 .sectionB,
 .sectionC,
 .sectionD,
-.sectionE {
+.sectionE,
+.sectionF {
     width: auto;
     min-width: 100%;
     min-height: 100%;
@@ -327,7 +329,7 @@ body::-webkit-scrollbar {
 }
 
 .sectionC .workImg .workImgPlacement .amitech {
-    background-image: url(meterial/picture/main/Amitech_IT/amitech.png);
+    background-image: url(../materials/picture/main/Amitech_IT/amitech.png);
     height: 40vw;
     background-size: cover;
     background-position: center;
