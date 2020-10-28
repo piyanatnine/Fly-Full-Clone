@@ -64,7 +64,7 @@
 
 .menu:hover > ul.dots li.mid {
   transform: scale(2);
-  background-color: rgb(100, 173, 255);
+  background-color: #3fc7f2;
   opacity: 1;
 }
 
