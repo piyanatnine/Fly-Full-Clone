@@ -228,3 +228,8 @@ a:focus:before {
     padding-top: 2vh;
   }
 }
+
+.full-img {
+  width: 100%;
+  height: auto;
+}
