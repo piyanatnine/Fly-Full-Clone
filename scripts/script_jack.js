@@ -11,7 +11,7 @@ window.addEventListener('scroll', function(){
 window.addEventListener("scroll", function(event) {
     var toBeFixed = document.getElementById("infoToBeFixed");
     var info = document.getElementById("info");
-    if (info.getBoundingClientRect().top <= 0 && (document.getElementById("longImg").getBoundingClientRect().bottom - toBeFixed.getBoundingClientRect().top > 400 || up) && window.screen.width >= 1000) {
+    if (info.getBoundingClientRect().top <= 0 && (document.getElementById("longImg").getBoundingClientRect().bottom - toBeFixed.getBoundingClientRect().top > 400 || (up && toBeFixed.getBoundingClientRect().bottom > 0)) && window.screen.width >= 1000) {
       toBeFixed.setAttribute("style", "margin-top:" + Math.abs(parseInt(info.getBoundingClientRect().top)) + "px;");
     }
   }, false)
