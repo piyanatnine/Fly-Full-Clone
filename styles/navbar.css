@@ -7,6 +7,7 @@
   margin: 0 0;
   font-size: 1.3em;
   color: white;
+  visibility: hidden;
   transition: margin-top 0.6s, visibility 0.7s;
   transition-delay: visibility 0.7s;
   z-index: 99;
