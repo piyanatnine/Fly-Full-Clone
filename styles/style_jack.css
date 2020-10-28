@@ -87,8 +87,8 @@ a {
   transition: 0.25s linear;
 }
 
-a:hover:before,
-a:focus:before {
+#underlinedLinkCover a:hover:before,
+#underlinedLinkCover a:focus:before {
   visibility: visible;
   animation: underlinedScroll 1.5s linear;
 }
