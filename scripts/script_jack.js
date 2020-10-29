@@ -8,3 +8,11 @@ window.addEventListener("scroll", function(event) {
       toBeFixed.setAttribute("style", "margin-top:" + Math.abs(parseInt(info.getBoundingClientRect().top)) + "px;");
     }
   }, false)
+
+  window.addEventListener("scroll", function(event) {
+    var toBeFixed = document.getElementById("longImgMove");
+    var info = document.getElementById("longImgStill");
+    if (info.getBoundingClientRect().top <= 0 && (Math.abs(info.getBoundingClientRect().bottom - toBeFixed.getBoundingClientRect().bottom) < 500 || up) && window.screen.width >= 1000) {
+      toBeFixed.setAttribute("style", "margin-top:" + parseInt(info.getBoundingClientRect().top) + "px;");
+    }
+  }, false)
