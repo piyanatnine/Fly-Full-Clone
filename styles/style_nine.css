@@ -247,6 +247,7 @@ body::-webkit-scrollbar {
     width: 32vw;
     top: 15vh;
     right: -60vw;
+    z-index: 3;
 }
 
 .leftText3 .ltTitle {
@@ -258,31 +259,28 @@ body::-webkit-scrollbar {
     line-height: 1.8;
 }
 
-.sectionC #underlinedLinkCover a {
-    color: white !important;
-    font-weight: 350;
-}
-
 a {
     text-decoration: none !important;
 }
 
-.sectionC #underlinedLinkCover a:before {
+.sectionC .viewAll div {
+    margin-left: 0%;
     content: "";
-    position: absolute;
-    width: 11em;
-    height: 1.5px;
-    bottom: 0;
-    background: white;
-    border-radius: 5px;
-    transform: scaleX(1);
-    transition: 0.25s linear;
+    display: block;
+    height: 2px;
+    width: 36%;
+    overflow: hidden;
 }
 
-.sectionC a:hover:before,
-.sectionC a:focus:before {
-    visibility: visible;
-    animation: underlinedScroll 1.5s linear;
+.sectionC .viewAll div .line {
+    width: 100%;
+    height: 2px;
+    background: white;
+    display: block;
+}
+
+.sectionC .leftText3:hover .line {
+    animation: slideX 1600ms;
 }
 
 .numPage {
@@ -291,7 +289,7 @@ a {
     font-size: 18vw;
     font-weight: 500;
     letter-spacing: 2px;
-    z-index: 6;
+    z-index: 1;
 }
 
 .top01 {
@@ -301,7 +299,7 @@ a {
 }
 
 .sectionC .namePage {
-    z-index: 7;
+    z-index: 2;
     font-size: 15vh;
     position: relative;
     left: 10.5vw;
@@ -451,9 +449,53 @@ a {
 
 .sectionE .workImg .workGif img {
     max-width: 100%;
-    /* transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
-  will-change: transform;
-  transform: translate3d(0px, 120px, 0px); */
+}
+
+.sectionF .margin {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.sectionF .text {
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin: 30vh 0 15vh 8vw;
+}
+
+.sectionF .click {
+    text-align: right;
+    margin-top: 30vh;
+}
+
+.sectionF .list li {
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.sectionF .list .title {
+    font-size: 30px;
+    margin-bottom: 1em !important;
+}
+
+.sectionF .click div {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 12%;
+    margin-left: 88%;
+    overflow: hidden;
+}
+
+.sectionF .line {
+    width: 100%;
+    height: 2px;
+    background: black;
+    display: block;
+}
+
+.sectionF a:hover .line {
+    animation: slideX 1600ms;
 }
 
 

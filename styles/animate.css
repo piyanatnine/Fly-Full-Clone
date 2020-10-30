@@ -60,23 +60,19 @@
     }
 }
 
-@keyframes underlinedScroll {
+@keyframes slideX {
     0% {
-        transform: scaleX(1);
+        transform: translateX(0%);
     }
-    25% {
-        transform: translateX(1em) scaleX(0.75);
+    33% {
+        transform: translateX(100%);
+        visibility: hidden;
     }
-    40% {
-        transform: translateX(3em) scaleX(0);
-    }
-    50% {
-        transform: scale(0);
-    }
-    60% {
-        transform: translateX(-2em) scale(0.5);
+    66% {
+        transform: translateX(-100%);
+        visibility: hidden;
     }
     100% {
-        transform: scale(1);
+        transform: translateX(0%);
     }
 }
