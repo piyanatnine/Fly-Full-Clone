@@ -131,14 +131,6 @@ body::-webkit-scrollbar {
     letter-spacing: 1.5px;
 }
 
-.leftText {
-    position: absolute;
-    z-index: 999;
-    top: 3.5vmin;
-    right: 0vmin;
-    padding: 20px;
-}
-
 .leftText2 {
     font-weight: 400;
     top: 40vmin;

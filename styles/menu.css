@@ -1,3 +1,11 @@
+.leftText {
+    position: absolute;
+    z-index: 999;
+    top: 3.5vmin;
+    right: 6vmin;
+    padding: 20px;
+}
+
 .menu p {
     color: rgb(251, 251, 251);
     display: inline-flex;
