@@ -10,8 +10,6 @@ body {
 #carouselControl {
   width: 800vw !important;
   height: 100vh !important;
-  --nowAt: 1;
-  transform: translateX(-70vw * (var(--nowAt) - 1));
   transition: transform 1.1s ease;
   margin-bottom: 0;
   padding-bottom: 0;
