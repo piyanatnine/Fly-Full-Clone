@@ -23,7 +23,8 @@ body {
 }
 
 .carouselImgCover {
-  max-width: 70vw;
+  max-width: 71vw;
+  height: 50vw;
   padding-left: 7vw;
   padding-right: 7vw;
   padding-top: 4vw;
