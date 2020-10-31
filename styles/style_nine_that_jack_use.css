@@ -1,0 +1,67 @@
+body {
+  margin: 0%;
+  width: auto;
+  height: auto;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /*Chrome, Safari and Opera*/
+}
+
+.sectionA,
+.sectionF {
+  height: 100vh !important;
+}
+
+.sectionA {
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: "Mulish", sans-serif;
+}
+
+.whiteBG {
+  background-color: white;
+  color: black;
+}
+
+.blackBG {
+  background-color: rgb(26, 26, 26);
+  color: white;
+}
+
+#ffcLogo {
+  max-width: 100%;
+  position: relative;
+  width: 65px;
+}
+
+/* AnimationFrameClass */
+
+.fadeInLeft {
+  margin-top: 3vw;
+  animation: fadeInLeft 1s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+
+.slideInUp {
+  animation: slideInUp 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  position: relative;
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 3s;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}

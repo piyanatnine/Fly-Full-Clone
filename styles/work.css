@@ -1,3 +1,31 @@
+body {
+  /*box-sizing: border-box;*/
+  overflow: hidden;
+}
+
 .almostBlack {
   background-color: #1a1a1a;
+}
+
+#carouselControl {
+  width: 500vw !important;
+  height: 100vh !important;
+  /*transform: translateX(-50vw);*/
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.carouselImg {
+  max-width: 100%;
+  float: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.carouselImgCover {
+  max-width: 70vw;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-top: 4vw;
+  float: left;
 }
