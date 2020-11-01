@@ -7,6 +7,10 @@ body {
   background-color: #1a1a1a;
 }
 
+#carouselScroller {
+  overflow-x: scroll;
+}
+
 #carouselControl {
   width: 800vw !important;
   height: 100vh !important;

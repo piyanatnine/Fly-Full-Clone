@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fly Full Circle Portfolio | View the work we've crafted with passion</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/style_nine_that_jack_use.css">
     <link rel="stylesheet" href="styles/animate.css">
     <link rel="stylesheet" href="styles/style_jack.css">
     <link rel="stylesheet" href="styles/work.css">
-    <script src="scripts/work.js"></script>
 
     <link rel='shotcut icon' href="../materials/icon/cropped-fav-32x32.png" sizes="32*32">
     <link rel='shotcut icon' href="../materials/icon/cropped-fav-192x192.png" sizes="192*192">
@@ -38,6 +38,7 @@
                 <li class="bot"></li>
                 <ul>
         </div>
+        <div id="carouselScroller">
         <div id="carouselControl" nowAt="0">
 
             <div class="carouselBlock"><div class="carouselImgCover"><div></div></div></div>
@@ -94,6 +95,7 @@
               </div></div>
             </div>
     </div>
+  </div>
     <div id="controlBtns">
     <a onclick="swipeWork(1)">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -111,5 +113,6 @@
         easing: 'ease'
     });
 </script>
+<script src="scripts/work.js"></script>
 </body>
 </html>

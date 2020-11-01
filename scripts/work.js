@@ -9,3 +9,24 @@ function swipeWork(direction){
   }
   carousel.setAttribute("style", "transform: translateX(" + (-70 * parseInt(carousel.getAttribute("nowAt"))) + "vw);");
 }
+
+window.addEventListener("wheel", function(event) {
+    if(event.deltaY < 0){
+        swipeWork(0);
+    }
+    else{
+      swipeWork(1);
+    }
+  });
+
+
+var oldX = 0;
+window.addEventListener("drag", function(event) {
+    if(event.pageX < oldX){
+        swipeWork(0);
+    }
+    else{
+      swipeWork(1);
+    }
+    oldX = event.pageX;
+  });
