@@ -11,7 +11,7 @@ function swipeWork(direction){
 }
 
 window.addEventListener("wheel", function(event) {
-  event.preventDefault();
+  event.stopImmediatePropagation();
     if(event.deltaY < 0){
         swipeWork(0);
     }
@@ -20,9 +20,12 @@ window.addEventListener("wheel", function(event) {
     }
   });
 
+  /*
   var oldScroll = 0;
   document.getElementById("carouselScroller").addEventListener("scroll", function(event) {
+    document.getElementById("carouselScroller").setAttribute("style", "overflow-x: hidden");
     event.preventDefault();
+    event.stopPropagation();
     console.log("new scroll= " + document.getElementById("carouselScroller").scrollLeft + " old=" + oldScroll);
     if(event.pageX < oldScroll){
       swipeWork(0);
@@ -30,27 +33,24 @@ window.addEventListener("wheel", function(event) {
     else{
       swipeWork(1);
     }
+    document.getElementById("carouselScroller").setAttribute("style", "overflow-x: scroll");
     oldScroll = document.getElementById("carouselScroller").scrollLeft;
-    event.stopImmediatePropagation();
   });
+*/
+
 
 var oldX = 0;
-var goingLeft = false;
-window.addEventListener("drag", function(event) {
-  event.preventDefault();
-  console.log("new= " + event.pageX + " old= " + oldX);
-    if(event.pageX < oldX) goingLeft = true;
-    else goingLeft = false;
+window.addEventListener("dragstart", function(event) {
+  event.stopImmediatePropagation();
     oldX = event.pageX;
   });
 
   window.addEventListener("dragend", function(event) {
-    event.preventDefault();
-    if(goingLeft){
+    event.stopImmediatePropagation();
+    if(event.pageX < oldX){
         swipeWork(0);
     }
     else{
       swipeWork(1);
     }
-    alert(goingLeft);
   });
