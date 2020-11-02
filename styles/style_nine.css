@@ -13,6 +13,18 @@ body::-webkit-scrollbar {
     /*Chrome, Safari and Opera*/
 }
 
+#navBar div ul li .index::before {
+    visibility: visible !important;
+    color: rgb(63, 199, 242) !important;
+    filter: opacity(1) !important;
+    transform: none !important;
+}
+
+#navBar div ul li .index:hover::before {
+    animation: none !important;
+    visibility: visible;
+}
+
 #bgVideo {
     position: absolute;
     top: 0;
@@ -135,7 +147,7 @@ body::-webkit-scrollbar {
     font-weight: 400;
     top: 40vmin;
     position: absolute;
-    z-index: 999;
+    z-index: 7;
     right: -12vmin;
     padding: 20px;
     transform: rotate(90deg);
