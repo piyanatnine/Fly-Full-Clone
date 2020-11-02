@@ -276,6 +276,11 @@ a {
     overflow: hidden;
 }
 
+.sectionC .viewAll a span {
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+}
+
 .sectionC .viewAll div .line {
     width: 100%;
     height: 2px;
