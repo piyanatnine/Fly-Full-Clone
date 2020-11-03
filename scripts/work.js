@@ -8,6 +8,17 @@ function swipeWork(direction){
     carousel.setAttribute("nowAt", nowAt - (nowAt > 0? 1:0));
   }
   carousel.setAttribute("style", "transform: translateX(" + (-71 * parseInt(carousel.getAttribute("nowAt"))) + "vw);");
+  nowAt = parseInt(carousel.getAttribute("nowAt"));
+  if(nowAt == 0){
+    document.getElementById("arrow1").setAttribute("class", "arrowDisabled");
+  }
+  else if(nowAt == 9){
+    document.getElementById("arrow2").setAttribute("class", "arrowDisabled");
+  }
+  else{
+    document.getElementById("arrow1").setAttribute("class", "");
+    document.getElementById("arrow2").setAttribute("class", "");
+  }
 }
 
 window.addEventListener("wheel", function(event) {
@@ -23,10 +34,10 @@ window.addEventListener("wheel", function(event) {
   /*
   var oldScroll = 0;
   document.getElementById("carouselScroller").addEventListener("scroll", function(event) {
-    document.getElementById("carouselScroller").setAttribute("style", "overflow-x: hidden");
     event.preventDefault();
     event.stopPropagation();
-    console.log("new scroll= " + document.getElementById("carouselScroller").scrollLeft + " old=" + oldScroll);
+    event.stopImmediatePropagation();
+    document.getElementById("carouselScroller").setAttribute("style", "overflow-x: hidden");
     if(event.pageX < oldScroll){
       swipeWork(0);
     }
@@ -35,8 +46,8 @@ window.addEventListener("wheel", function(event) {
     }
     document.getElementById("carouselScroller").setAttribute("style", "overflow-x: scroll");
     oldScroll = document.getElementById("carouselScroller").scrollLeft;
-  });
-*/
+  });*/
+
 
 
 var oldX = 0;
