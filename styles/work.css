@@ -9,6 +9,8 @@ body {
 
 #carouselScroller {
   overflow-x: scroll;
+  margin-top: -1vw;
+  padding-top: 0;
 }
 
 #carouselControl {
@@ -25,6 +27,7 @@ body {
   padding-bottom: 0;
   margin-top: -13%;
   position: relative;
+  cursor: pointer;
 }
 
 .carouselBlock {
@@ -37,6 +40,7 @@ body {
   padding-left: 3.2em;
   padding-bottom: 0.5em;
   color: white;
+  cursor: pointer;
 }
 
 .carouselImgCover {
@@ -49,8 +53,47 @@ body {
 }
 
 #controlBtns {
-  margin-top: -10vw;
-  margin-left: 10vw;
+  margin-top: -11vw;
+  margin-left: 3.5vw;
   position: fixed;
   z-index: 99;
+}
+
+#controlBtns div {
+  float: left;
+}
+
+#controlBtns p {
+  float: left;
+  margin-right: 3.8vw;
+  margin-top: -13px;
+  font-size: 15px;
+  letter-spacing: normal;
+}
+
+#controlBtns div svg {
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin-top: -11px;
+}
+
+#controlBtns div:hover svg g path.innerArrow {
+  fill: black;
+}
+
+#controlBtns div:hover svg g circle {
+  fill: white;
+}
+
+#controlBtns div:hover svg.arrowDisabled g circle {
+  fill: black;
+}
+
+#controlBtns div svg.arrowDisabled {
+  opacity: 0.5;
+}
+
+#controlBtns div:hover svg.arrowDisabled g path.innerArrow {
+  fill: white;
 }
