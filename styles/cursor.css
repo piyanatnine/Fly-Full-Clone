@@ -1,0 +1,25 @@
+.clickAbleImg {
+  cursor: pointer;
+}
+
+.cursor {
+  pointer-events: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #3fc7f2;
+  border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
+}
+
+.cursor[tag="expanded"] {
+  width: 150px;
+  height: 150px;
+  border: none;
+  background-color: black;
+  opacity: 0.75;
+  pointer-events: none;
+  margin-left: -55px;
+  margin-top: -55px;
+}

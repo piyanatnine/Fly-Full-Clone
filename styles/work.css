@@ -27,7 +27,6 @@ body {
   padding-bottom: 0;
   margin-top: -13%;
   position: relative;
-  cursor: pointer;
 }
 
 .carouselBlock {
@@ -40,7 +39,6 @@ body {
   padding-left: 3.2em;
   padding-bottom: 0.5em;
   color: white;
-  cursor: pointer;
 }
 
 .carouselImgCover {
