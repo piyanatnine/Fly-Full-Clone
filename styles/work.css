@@ -77,6 +77,7 @@ body {
 }
 
 #controlBtns div:hover svg g path.innerArrow {
+  stroke: white;
   fill: black;
 }
 
@@ -86,6 +87,7 @@ body {
 
 #controlBtns div:hover svg.arrowDisabled g circle {
   fill: black;
+  stroke: white;
 }
 
 #controlBtns div svg.arrowDisabled {
@@ -93,5 +95,6 @@ body {
 }
 
 #controlBtns div:hover svg.arrowDisabled g path.innerArrow {
+  stroke: black;
   fill: white;
 }
