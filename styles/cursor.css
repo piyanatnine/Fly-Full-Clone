@@ -1,3 +1,7 @@
+* {
+  cursor: url("/materials/icon/cursor_center.svg"), auto;
+}
+
 .clickAbleImg {
   cursor: pointer;
 }
@@ -5,6 +9,8 @@
 .cursor {
   pointer-events: none;
   position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
   width: 40px;
   height: 40px;
   border: 2px solid #3fc7f2;
