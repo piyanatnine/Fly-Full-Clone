@@ -1,28 +1,32 @@
-const cursor = document.querySelector('.cursor');
-var div = document.querySelectorAll(".clickAbleImg");
+const cursor = document.querySelector(".cursor");
+const cursorArrow = document.querySelector(".cursorArrow")
+var clickAbleImg = document.querySelectorAll(".clickAbleImg");
 
 document.addEventListener('mousemove', e => {
     cursor.setAttribute("style", "top: "+(e.pageY - 20)+"px; left: "+(e.pageX - 20)+"px;")
-    for(var div2 of div){
-        if(div2.mouseIsOver){
+    cursorArrow.setAttribute("style", "top: "+(e.pageY - 20)+"px; left: "+(e.pageX - 20)+"px;")
+    for(var div of clickAbleImg){
+        if(div.mouseIsOver){
             cursor.setAttribute("tag", "expanded");
+            cursorArrow.setAttribute("tag", "");
             break;
         }
         else{
             cursor.setAttribute("tag", "");
+            cursorArrow.setAttribute("tag", "hidden");
         }
     }
 })
 
 window.onload = initDivMouseOver;
 function initDivMouseOver()   {
-   for(var div2 of div){
-   div2.mouseIsOver = false;
-   div2.onmouseover = function()   {
-      div2.mouseIsOver = true;
+   for(var div of clickAbleImg){
+   div.mouseIsOver = false;
+   div.onmouseover = function()   {
+      div.mouseIsOver = true;
    };
-   div2.onmouseout = function()   {
-      div2.mouseIsOver = false;
+   div.onmouseout = function()   {
+      div.mouseIsOver = false;
    }
 }
 }
