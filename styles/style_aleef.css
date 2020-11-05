@@ -155,3 +155,6 @@ a.prevPostWrap img.next__post__thumb {
     font-weight: 600;
     margin: 0;
 }
+.compressedcolLeft,.compressedcolRight {
+    padding: 0 5% 0 15%;
+}
