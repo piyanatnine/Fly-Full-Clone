@@ -13,16 +13,15 @@ body::-webkit-scrollbar {
     /*Chrome, Safari and Opera*/
 }
 
-#navBar div ul li .index::before {
-    visibility: visible !important;
+#navBar div ul li #prevent::before {
     color: rgb(63, 199, 242) !important;
     filter: opacity(1) !important;
     transform: none !important;
+    visibility: var(--prevent) !important;
 }
 
-#navBar div ul li .index:hover::before {
+#navBar div ul li #prevent:hover::before {
     animation: none !important;
-    visibility: visible;
 }
 
 #bgVideo {

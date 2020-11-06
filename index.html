@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <script rel="text/javascript" src="scripts/script.js"></script>
     <script rel="text/javascript" src="scripts/navbar.js"></script>
+    <script rel="text/javascript" src="scripts/cursor.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
@@ -31,7 +32,7 @@
         </div>
         <div>
             <ul>
-                <li><a class="index">Home</a></li>
+                <li><a id="prevent">Home</a></li>
                 <li><a href="/work.html">Work</a></li>
                 <li><a>Approach</a></li>
                 <li><a>What we do</a></li>
@@ -315,6 +316,8 @@
     AOS.init({
         easing: 'ease'
     });
+    var style = document.querySelector('#prevent').style;
+    style.setProperty('--background', 'visible');
 </script>
 
 </html>
