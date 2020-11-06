@@ -1,16 +1,10 @@
 body{font-family: 'Mulish', sans-serif !important;}
 
-/* .ffcLogo { */
-    /* position: absolute; */
-    /* top: 40px; */
-    /* left: 40px; */
-    /* z-index: 999; */
-    /* cursor: pointer; */
-/* } */
-#ffcLogo {
+#ffcLogoAL {
     max-width: 100%;
-    position: relative;
+    position: absolute;
     width: 65px;
+    z-index: 110;
 }
 
 .caseLanding {
