@@ -17,6 +17,7 @@
   border-radius: 50%;
   transition-duration: 250ms;
   transition-timing-function: ease-out;
+  z-index: 9999;
 }
 
 .cursor[tag="expanded"] {
@@ -40,6 +41,7 @@
   transition-duration: 30ms;
   transition-timing-function: linear;
   visibility: visible;
+  z-index: 9999;
 }
 
 .cursorArrow[tag="hidden"] {
