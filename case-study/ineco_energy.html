@@ -14,13 +14,21 @@
     <link href="../styles/footer.css" rel="stylesheet">
     <link href="../styles/menu.css" rel="stylesheet">
     <link href="../styles/navbar.css" rel="stylesheet">
+    
+    <link rel='shotcut icon' href="materials/icon/cropped-fav-32x32.png" sizes="32*32">
+    <link rel='shotcut icon' href="materials/icon/cropped-fav-192x192.png" sizes="192*192">
+
+    <script rel="text/javascript" src="../scripts/navbar.js"></script>
+    <script rel="text/javascript" src="../scripts/cursor.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -63,7 +71,7 @@
         <div class="caseOverlay" style="background-color: rgba(0,0,0,0.3)"></div>
         <div class="container-case">
             
-            <div class="caseLandingText animated fadeInUp">
+            <div class="caseLandingText animated" data-aos="fade-up" data-aos-duration="1000">
                 <h1 style="color:white;">Ineco Energy</h1>
                 <p>Energy solutions designed for efficiency</p>
             </div>
@@ -86,7 +94,12 @@
                                 through. <br>
                                 <br> A clean and contemporary website was created for ease of navigation, without losing the key valued elements and content. <br>
                             </p>
-                            <div id="underlinedLinkCover"><a href="https://www.inecoenergy.com/" target="_blank">Launch Project<br><div style="height: 0.5em !important"></div></div></a>
+                            <div class="launchLine" data-aos="fade-up" data-aos-duration="1000">
+                                <a href="/work.html">
+                                    <span>Launch Project</span>
+                                    <div><span class="line"></span></div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,8 +180,12 @@
     </footer>
 
 
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease'
+        });
+    </script>
 </body>
 
 </html>
