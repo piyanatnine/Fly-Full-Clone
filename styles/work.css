@@ -51,8 +51,8 @@ body {
 }
 
 #controlBtns {
-  margin-top: -11vw;
-  margin-left: 3.5vw;
+  bottom: 1.5vw;
+  left: 3vw;
   position: fixed;
   z-index: 99;
 }
@@ -97,4 +97,32 @@ body {
 #controlBtns div:hover svg.arrowDisabled g path.innerArrow {
   stroke: black;
   fill: white;
+}
+
+#viewAllTxt {
+  position: absolute;
+  bottom: 2.5vw;
+  right: 3vw;
+  font-size: 17px;
+  letter-spacing: normal;
+}
+
+#showAll {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: -99;
+  width: 0px;
+  height: 0px;
+  overflow: scroll;
+  transition: width 1s ease, height 1s ease, opacity 1s ease;
+  opacity: 0;
+  background-color: black;
+}
+
+#showAll[tag="Active"] {
+  z-index: 9999;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
 }

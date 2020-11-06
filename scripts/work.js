@@ -65,3 +65,8 @@ window.addEventListener("dragstart", function(event) {
       swipeWork(1);
     }
   });
+
+
+document.getElementById("rubrikBtn").onclick = function (){
+  document.getElementById("showAll").setAttribute("tag", "Active");
+}
