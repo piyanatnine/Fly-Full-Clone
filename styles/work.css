@@ -121,7 +121,7 @@ body {
 }
 
 #showAll[tag="Active"] {
-  z-index: 9999;
+  z-index: 999;
   opacity: 1;
   width: 100vw;
   height: 100vh;
