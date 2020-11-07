@@ -14,3 +14,4 @@ function randomTXT(){
     console.log(a);
     document.getElementById("textSecA").innerHTML = value[a];
 }
+

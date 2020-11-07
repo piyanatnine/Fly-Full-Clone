@@ -78,11 +78,47 @@ body::-webkit-scrollbar {
     color: white;
 }
 
+.shadows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease;
+}
+
 #ffcLogo {
     max-width: 100%;
     position: relative;
     width: 65px;
 }
+
+.menuClick {
+    visibility: hidden;
+    margin-right: -50%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 30%;
+    z-index: 20;
+    transition: 1200ms ease;
+    transition-delay: 300ms;
+}
+
+.textClick {
+    transition: color 100ms ease;
+}
+
+.menuClick p{
+    visibility: hidden;
+    transition-delay: 1000ms;
+    transition: 600ms ease;
+} 
 
 .hidden {
     height: 350px;

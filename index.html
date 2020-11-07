@@ -15,9 +15,11 @@
     <link rel='shotcut icon' href="materials/icon/cropped-fav-192x192.png" sizes="192*192">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <script rel="text/javascript" src="scripts/script_nine.js"></script>
+    <script rel="text/javascript" src="scripts/menuClick.js"></script>
     <script rel="text/javascript" src="scripts/navbar.js"></script>
-    <script rel="text/javascript" src="scripts/cursor.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <script rel="text/javascript" src="scripts/cursor.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -48,9 +50,9 @@
         <a href="index.html">
             <img src="materials/icon/ffclogo.png" alt="ffcLogo" class="fadeInLeft" id="ffcLogo">
         </a>
-        <div class="menu leftText">
+        <div class="menu leftText" onclick="menuClick()">
             <p>
-                <span>Menu</span>
+                <span class="textClick">Menu</span>
             </p>
             <ul class="dots">
                 <li class="top"></li>
@@ -58,11 +60,18 @@
                 <li class="bot"></li>
             </ul>
         </div>
+        <div class="menuClick">
+            <!-- <p class="textClick1">work</p>
+            <p class="textClick1">Approach</p>
+            <p class="textClick1"> WhatWedo</p>
+            <p class="textClick1">Let's talk</p> -->
+        </div>
         <div class="hidden">
             <p class="slideInUp" id="textSecA"></p>
         </div>
         <div class="leftText2 fadeIn">
-            <p>We are also <a href="https://www.instagram.com/flyfullcircle/" target="_blank" class="ig">Instagram</a> and <a href="https://www.facebook.com/flyfullcircle/" target="_blank" class="facebook">Facebook</a></p>
+            <p>We are also <a href="https://www.instagram.com/flyfullcircle/" target="_blank" class="ig">Instagram</a>
+                and <a href="https://www.facebook.com/flyfullcircle/" target="_blank" class="facebook">Facebook</a></p>
         </div>
         <div class="txtBox slideInUp2">
             <div class="row">
@@ -96,6 +105,7 @@
         <video autoplay muted loop id="bgVideo">
             <source src="materials/video/webshort.mp4" type="video/mp4">
         </video>
+        <div class="shadows"></div>
     </div>
     <div class="sectionB">
         <div class="txt_1">
@@ -112,8 +122,11 @@
                 </div>
                 <div class="txt_2 col-lg-5 col-8">
                     <p class="textSecB_2" style="font-size: 16px;" data-aos="fade-up" data-aos-duration="1100">
-                        Our talents lie in taking brands to the next level by enhancing their identity and digital footprint. We take a fresh approach to every project and strive to create greatness in all we do. Working with businesses big and small, we have a vast knowledge
-                        of the ever changing technologies and challenging markets allowing our creative team to continue in delivering to a high standard.
+                        Our talents lie in taking brands to the next level by enhancing their identity and digital
+                        footprint. We take a fresh approach to every project and strive to create greatness in all we
+                        do. Working with businesses big and small, we have a vast knowledge
+                        of the ever changing technologies and challenging markets allowing our creative team to continue
+                        in delivering to a high standard.
                     </p>
                 </div>
             </div>
@@ -125,7 +138,8 @@
                 Some of our work
             </p>
             <p class="ltInfo" data-aos="fade-up" data-aos-duration="1000">
-                We are proud to have worked with some great clients. View some of our recent web design and branding projects to get an insight in to the process and deliverables.
+                We are proud to have worked with some great clients. View some of our recent web design and branding
+                projects to get an insight in to the process and deliverables.
             </p>
             <div class="viewAll" data-aos="fade-up" data-aos-duration="1000">
                 <a href="/work.html">
@@ -293,16 +307,22 @@
                     <div class="col-md-5 col-12 my-5">
                         <ul class="footerSocials ml-5">
                             <li>
-                                <a href="https://www.linkedin.com/company/flyfullcircleltd/" target="_blank" class="footerSocialLinks"><img style="padding-bottom: 2px; padding-right: 2px;" src="materials/icon/linkedin.svg"></a>
+                                <a href="https://www.linkedin.com/company/flyfullcircleltd/" target="_blank"
+                                    class="footerSocialLinks"><img style="padding-bottom: 2px; padding-right: 2px;"
+                                        src="materials/icon/linkedin.svg"></a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/flyfullcircle/" target="_blank" class="footerSocialLinks"><img src="materials/icon/fb.svg"></a>
+                                <a href="https://www.facebook.com/flyfullcircle/" target="_blank"
+                                    class="footerSocialLinks"><img src="materials/icon/fb.svg"></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/flyfullcircle/" target="_blank" class="footerSocialLinks"><img src="materials/icon/ig.svg"></a>
+                                <a href="https://www.instagram.com/flyfullcircle/" target="_blank"
+                                    class="footerSocialLinks"><img src="materials/icon/ig.svg"></a>
                             </li>
                             <li>
-                                <a href="https://dribbble.com/Flyfullcircle" target="_blank" class="footerSocialLinks"><img style="padding-left: 3px; padding-bottom: 1px;" src="materials/icon/dribble.svg"></a>
+                                <a href="https://dribbble.com/Flyfullcircle" target="_blank"
+                                    class="footerSocialLinks"><img style="padding-left: 3px; padding-bottom: 1px;"
+                                        src="materials/icon/dribble.svg"></a>
                             </li>
                         </ul>
                     </div>
