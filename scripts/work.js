@@ -70,3 +70,7 @@ window.addEventListener("dragstart", function(event) {
 document.getElementById("rubrikBtn").onclick = function (){
   document.getElementById("showAll").setAttribute("tag", "Active");
 }
+
+document.getElementById("xBtn").onclick = function (){
+  document.getElementById("showAll").setAttribute("tag", "");
+}
