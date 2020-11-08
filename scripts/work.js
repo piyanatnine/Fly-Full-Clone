@@ -24,10 +24,10 @@ function swipeWork(direction){
 window.addEventListener("wheel", function(event) {
   event.stopImmediatePropagation();
     if(event.deltaY < 0){
-        swipeWork(0);
+        swipeWork(1);
     }
     else{
-      swipeWork(1);
+      swipeWork(0);
     }
   });
 
