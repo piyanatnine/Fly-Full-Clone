@@ -39,6 +39,14 @@ a:visited {
   z-index: -1;
 }
 
+.topVideo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+
 .explain {
   padding-top: 12vh;
   padding-bottom: 13vh;
