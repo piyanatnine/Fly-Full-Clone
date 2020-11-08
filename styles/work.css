@@ -129,12 +129,12 @@ body {
 }
 
 #showAllInner {
-  margin-top: 180vh;
+  margin-top: 240vh;
   margin-left: 6.7vw;
   margin-bottom: 7vw;
   visibility: hidden;
-  transition: visibility 1s, margin-top 2s;
-  transition-delay: visibility 1s, margin-top 16s;
+  transition: visibility 1s, margin-top 2.8s ease-in;
+  transition-delay: visibility 5s, margin-top 5s;
 }
 
 #showAll[tag="Active"] #showAllInner {
