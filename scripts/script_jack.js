@@ -9,10 +9,13 @@ window.addEventListener("scroll", function(event) {
     }
   }, false)
 
+  var longImgLimit = 500;
+  var longImgAdjust = 0;
+  var longImgDamper = 1;
   window.addEventListener("scroll", function(event) {
-    var toBeFixed = document.getElementById("longImgMove");
-    var info = document.getElementById("longImgStill");
-    if (info.getBoundingClientRect().top <= 0 && (Math.abs(info.getBoundingClientRect().bottom - toBeFixed.getBoundingClientRect().bottom) < 500 || up) && window.screen.width >= 1000) {
-      toBeFixed.setAttribute("style", "margin-top:" + parseInt(info.getBoundingClientRect().top) + "px;");
+    var toBeFixedLong = document.getElementById("longImgMove");
+    var infoLong = document.getElementById("longImgStill");
+    if (infoLong.getBoundingClientRect().top <= 0 && (Math.abs(infoLong.getBoundingClientRect().bottom - toBeFixedLong.getBoundingClientRect().bottom) < longImgLimit || up) && window.screen.width >= 1000) {
+      toBeFixedLong.setAttribute("style", "margin-top:" + ((parseFloat(infoLong.getBoundingClientRect().top) / longImgDamper) + longImgAdjust) + "px;");
     }
   }, false)
