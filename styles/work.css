@@ -197,4 +197,10 @@ body {
   right: 5.5vw;
   top: 4.5vw;
   position: absolute;
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+#showAll[tag="Active"] #xBtn {
+  opacity: 1;
 }
