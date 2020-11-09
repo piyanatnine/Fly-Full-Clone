@@ -8,6 +8,7 @@ body {
     /* Firefox */
 }
 
+
 body::-webkit-scrollbar {
     display: none;
     /*Chrome, Safari and Opera*/
@@ -96,30 +97,6 @@ body::-webkit-scrollbar {
     width: 65px;
 }
 
-.menuClick {
-    visibility: hidden;
-    margin-right: -50%;
-    top: 0;
-    right: 0;
-    position: absolute;
-    background-color: white;
-    height: 100%;
-    width: 30%;
-    z-index: 20;
-    transition: 1200ms ease;
-    transition-delay: 300ms;
-}
-
-.textClick {
-    transition: color 100ms ease;
-}
-
-.menuClick p{
-    visibility: hidden;
-    transition-delay: 1000ms;
-    transition: 600ms ease;
-} 
-
 .hidden {
     height: 350px;
     width: 900px;
@@ -144,14 +121,6 @@ body::-webkit-scrollbar {
 .serviceNumber {
     color: rgb(89, 91, 91);
     font-size: 18px;
-}
-
-.fa-arrow-right {
-    font-size: 18px;
-    margin-left: 15px;
-    opacity: 0;
-    transition: all 250ms;
-    transform: translateX(-10px);
 }
 
 .txt:hover .fa-arrow-right {
@@ -389,9 +358,6 @@ a {
 
 .sectionC .workImg .workGif img {
     max-width: 100%;
-    /* transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s;
-  will-change: transform;
-  transform: translate3d(0px, 120px, 0px); */
 }
 
 
