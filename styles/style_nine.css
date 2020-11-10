@@ -79,18 +79,6 @@ body::-webkit-scrollbar {
     color: white;
 }
 
-.shadows {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 300ms ease;
-}
-
 #ffcLogo {
     max-width: 100%;
     position: relative;
@@ -542,4 +530,17 @@ a {
     animation: fadeIn 3s;
     animation-fill-mode: both;
     animation-delay: 3s;
+}
+
+.prev {
+    background-image: url(../materials/picture/work/the_good_stuff/bottom.jpg) !important;
+    opacity: 0.8 !important;
+    background-position: center !important;
+    background-size: 100% !important;
+    transition: 1000ms all !important;
+}
+
+.prev:hover {
+    opacity: 0.6 !important;
+    background-size: 105% !important;
 }
