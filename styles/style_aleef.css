@@ -181,3 +181,16 @@ a.prevPostWrap img.next__post__thumb {
     animation:slideX 1700ms;
 }
 .boldText{font-size: 24px;font-weight:600;}
+.prevVita {
+    background-image: url(../materials/picture/work/ineco_energy/cycling-banner.jpg) !important;
+    opacity: 0.6 !important;
+    background-position: center !important;
+    background-size: 100% !important;
+    transition: 1000ms all !important;
+}
+
+.prevVita:hover {
+    opacity: 0.45 !important;
+    background-size: 105% !important;
+    transform: rotateZ(5deg) translateZ(-100%);
+}
