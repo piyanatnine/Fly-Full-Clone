@@ -191,6 +191,5 @@ a.prevPostWrap img.next__post__thumb {
 
 .prevVita:hover {
     opacity: 0.45 !important;
-    background-size: 105% !important;
-    transform: rotateZ(5deg) translateZ(-100%);
+    transform: rotateZ(1deg) scale(1.02) !important;
 }
