@@ -12,6 +12,5 @@ window.addEventListener("scroll", function(event) {
         else{
             img.setAttribute("style", "top:" + (parseInt(style.top) <= originTop - 60? originTop - 60: parseInt(style.top) - 1) + "px");
         }
-        console.log(style.top);
     }
   })
