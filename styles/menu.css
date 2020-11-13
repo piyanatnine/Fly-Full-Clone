@@ -113,7 +113,6 @@
   }
 }
 
-
 /* afterClick */
 .menuClick {
   visibility: hidden;
@@ -133,7 +132,7 @@
   transition: color 100ms ease;
 }
 
-.menuClick .menuBar{
+.menuClick .menuBar {
   position: relative;
   top: 20vh;
   list-style: none;
@@ -154,29 +153,29 @@
   font-size: 4vmin;
   margin-bottom: 7%;
   user-select: none;
-} 
+}
 
-.menuClick .menuBar li:nth-child(1) a::before{
+.menuClick .menuBar li:nth-child(1) a::before {
   content: "01.";
 }
 
-.menuClick .menuBar li:nth-child(2) a::before{
+.menuClick .menuBar li:nth-child(2) a::before {
   content: "02.";
 }
 
-.menuClick .menuBar li:nth-child(3) a::before{
+.menuClick .menuBar li:nth-child(3) a::before {
   content: "03.";
 }
 
-.menuClick .menuBar li:nth-child(4) a::before{
+.menuClick .menuBar li:nth-child(4) a::before {
   content: "04.";
 }
 
-.menuClick .menuBar:hover li{
+.menuClick .menuBar:hover li {
   opacity: 0.5;
 }
 
-.menuClick .menuBar li:hover{
+.menuClick .menuBar li:hover {
   opacity: 1;
 }
 
@@ -194,7 +193,8 @@
   font-size: 1.6vh;
 }
 
-.menuClick .texter .mail a{
+.menuClick .texter .mail a,
+.menuClick .menuBar li a {
   color: black;
   text-decoration: none !important;
 }
@@ -203,7 +203,7 @@
   margin-top: 5px;
   margin-left: 0%;
   content: "";
-  display: block;  
+  display: block;
   height: 1.3px;
   width: 50%;
   overflow: hidden;
@@ -231,7 +231,7 @@
   transition: 1200ms;
 }
 
-.menuClick .social li{
+.menuClick .social li {
   float: left;
   opacity: 0.8;
   margin-left: 0.8vw;
@@ -243,12 +243,12 @@
   color: black;
 }
 
-.menuClick .social li:nth-child(odd):hover a{
+.menuClick .social li:nth-child(odd):hover a {
   color: rgb(40, 76, 134);
   transition: 2000ms all;
 }
 
-.menuClick .social li:nth-child(even):hover a{
+.menuClick .social li:nth-child(even):hover a {
   color: rgb(218, 120, 145);
   transition: 2000ms all;
 }
