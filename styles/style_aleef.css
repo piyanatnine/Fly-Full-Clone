@@ -4,7 +4,7 @@ body{font-family: 'Mulish', sans-serif !important;}
     max-width: 100%;
     position: absolute;
     width: 65px;
-    z-index: 110;
+    z-index: 10;
 }
 
 .caseLanding {
@@ -186,7 +186,7 @@ a.prevPostWrap img.next__post__thumb {
     opacity: 0.6 !important;
     background-position: center !important;
     background-size: 100% !important;
-    transition: 1000ms all !important;
+    transition: 500ms all !important;
 }
 
 .prevVita:hover {

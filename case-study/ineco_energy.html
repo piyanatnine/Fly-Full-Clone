@@ -14,20 +14,22 @@
     <link href="../styles/footer.css" rel="stylesheet">
     <link href="../styles/menu.css" rel="stylesheet">
     <link href="../styles/navbar.css" rel="stylesheet">
-    
+
+
     <link rel='shotcut icon' href="../materials/icon/cropped-fav-32x32.png" sizes="32*32">
     <link rel='shotcut icon' href="../materials/icon/cropped-fav-192x192.png" sizes="192*192">
 
+    <script rel="text/javascript" src="../scripts/menuClick.js"></script>
     <script rel="text/javascript" src="../scripts/navbar.js"></script>
     <script rel="text/javascript" src="../scripts/cursor.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
@@ -51,32 +53,58 @@
             </ul>
         </div>
     </div>
-    <!--ffclogo-->	
-    <a href="../index.html">
-        <img src="../materials/icon/ffclogo.png" alt="ffcLogo" class="fadeInLeft" id="ffcLogoAL">
-    </a>
-    <!--menubar-->    
-    <div class="menu leftText">
-        <p>
-            <span>Menu</span>
-        </p>
-        <ul class="dots">
-            <li class="top"></li>
-            <li class="mid"></li>
-            <li class="bot"></li>
-            <ul>
-    </div>
-	
+
     <!--1-->
-    <div class="caseLanding" style="background-image: url(../materials/picture/work/ineco_energy/collingwood-solar.jpg);background-position: center;background-repeat: no-repeat;">
+    <div class="caseLanding"
+        style="background-image: url(../materials/picture/work/ineco_energy/collingwood-solar.jpg);background-position: center;background-repeat: no-repeat;">
         <div class="caseOverlay" style="background-color: rgba(0,0,0,0.3)"></div>
+        <!--ffclogo-->
+        <a href="../index.html">
+            <img src="../materials/icon/ffclogo.png" alt="ffcLogo" class="fadeInLeft" id="ffcLogoAL">
+        </a>
+        <!--menubar-->
+        <div class="menu leftText" onclick="menuClick()">
+            <p>
+                <span class="textClick">Menu</span>
+            </p>
+            <ul class="dots">
+                <li class="top"></li>
+                <li class="mid"></li>
+                <li class="bot"></li>
+            </ul>
+        </div>
+        <div class="menuClick">
+                <ul class="menuBar">
+                    <li><a>work<i class="fas fa-arrow-right"></i></a></li>
+                    <li><a>Approach<i class="fas fa-arrow-right"></i></a></li>
+                    <li><a>What we do<i class="fas fa-arrow-right"></i></a></li>
+                    <li><a>Let's talk<i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+                <div class="texter">
+                    <a>
+                        <p>Get in touch</p>
+                    </a>
+                    <div class="mail">
+                        <a href="mailto:hello@flyfullcircle.co.uk">
+                            <span>hello@flyfullcircle.co.uk</span>
+                            <div><span class="line"></span></div>
+                        </a>
+                    </div>
+                </div>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/flyfullcircle/" target="_blank">Facebook.</a></li>
+                    <li><a href="https://www.instagram.com/flyfullcircle/" target="_blank">Instgram.</a></li>
+                    <li><a href="https://www.linkedin.com/company/flyfullcircleltd/" target="_blank">LinkedIn.</a></li>
+                    <li><a href="https://dribbble.com/Flyfullcircle" target="_blank">Dribbble.</a></li>
+                </ul>
+        </div>
         <div class="container-case">
-            
             <div class="caseLandingText animated" data-aos="fade-up" data-aos-duration="1000">
                 <h1 style="color:white;">Ineco Energy</h1>
                 <p>Energy solutions designed for efficiency</p>
             </div>
         </div>
+        <div class="shadows"></div>
     </div>
     <!--2-->
     <div class="homeIntro whiteBg">
@@ -90,11 +118,14 @@
                     </div>
                     <div class="col-lg-8 col-12 compressedcolRight">
                         <div style="overflow: hidden; position: relative;">
-                            <p>With a vision of helping to protect the planet and educate the next generations, Ineco Energy appointed Fly Full Circle to create a brand and new website that was copy led, enabling their personality and core offering to shine
+                            <p>With a vision of helping to protect the planet and educate the next generations, Ineco
+                                Energy appointed Fly Full Circle to create a brand and new website that was copy led,
+                                enabling their personality and core offering to shine
                                 through. <br>
-                                <br> A clean and contemporary website was created for ease of navigation, without losing the key valued elements and content. <br>
+                                <br> A clean and contemporary website was created for ease of navigation, without losing
+                                the key valued elements and content. <br>
                             </p>
-                            <div class="launchLine" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="launchLine">
                                 <a href="/work.html">
                                     <span>Launch Project</span>
                                     <div><span class="line"></span></div>
@@ -110,7 +141,10 @@
     <img src="../materials/picture/work/ineco_energy/ineco-logo-1.jpg" width="100%">
     <!--loading="lazy"-->
     <img src="../materials/picture/work/ineco_energy/ineco-logo-2.jpg" width="100%">
-    <div class="simpleParallax" style="overflow: hidden;"><img src="../materials/picture/work/ineco_energy/ineco.jpg" width="100%" class="normalParallaxSlow" style="transform: translate3d(0px, -5px, 0px) scale(1.1); transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s; will-change: transform;"></div>
+    <div class="simpleParallax" style="overflow: hidden;"><img src="../materials/picture/work/ineco_energy/ineco.jpg"
+            width="100%" class="normalParallaxSlow"
+            style="transform: translate3d(0px, -5px, 0px) scale(1.1); transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s; will-change: transform;">
+    </div>
     <img src="../materials/picture/work/ineco_energy/ineco-home.jpg" width="100%">
     <!--4-->
 
@@ -127,13 +161,13 @@
     
         </a-->
 
-        <a href="" class="prevPostWrap">
-            <div class="overlay prevVita"></div>
-            <div class="prevPostContent">
-                <p class="prevSmallTitle">Next Case Study</p>
-                <p class="prevBigTitle">Vita Sports</p>
-            </div>
-        </a>
+    <a href="" class="prevPostWrap">
+        <div class="overlay prevVita"></div>
+        <div class="prevPostContent">
+            <p class="prevSmallTitle">Next Case Study</p>
+            <p class="prevBigTitle">Vita Sports</p>
+        </div>
+    </a>
 
     <!--footer-->
     <footer class="almostBlack">
@@ -170,16 +204,22 @@
                     <div class="col-md-5 col-12 my-5">
                         <ul class="footerSocials ml-5">
                             <li>
-                                <a href="https://www.linkedin.com/company/flyfullcircleltd/" target="_blank" class="footerSocialLinks"><img style="padding-bottom: 2px; padding-right: 2px;" src="../materials/icon/linkedin.svg"></a>
+                                <a href="https://www.linkedin.com/company/flyfullcircleltd/" target="_blank"
+                                    class="footerSocialLinks"><img style="padding-bottom: 2px; padding-right: 2px;"
+                                        src="../materials/icon/linkedin.svg"></a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/flyfullcircle/" target="_blank" class="footerSocialLinks"><img src="../materials/icon/fb.svg"></a>
+                                <a href="https://www.facebook.com/flyfullcircle/" target="_blank"
+                                    class="footerSocialLinks"><img src="../materials/icon/fb.svg"></a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/flyfullcircle/" target="_blank" class="footerSocialLinks"><img src="../materials/icon/ig.svg"></a>
+                                <a href="https://www.instagram.com/flyfullcircle/" target="_blank"
+                                    class="footerSocialLinks"><img src="../materials/icon/ig.svg"></a>
                             </li>
                             <li>
-                                <a href="https://dribbble.com/Flyfullcircle" target="_blank" class="footerSocialLinks"><img style="padding-left: 3px; padding-bottom: 1px;" src="../materials/icon/dribble.svg"></a>
+                                <a href="https://dribbble.com/Flyfullcircle" target="_blank"
+                                    class="footerSocialLinks"><img style="padding-left: 3px; padding-bottom: 1px;"
+                                        src="../materials/icon/dribble.svg"></a>
                             </li>
                         </ul>
                     </div>
