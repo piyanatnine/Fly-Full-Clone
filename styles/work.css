@@ -149,6 +149,7 @@ body {
   float: left;
   overflow: hidden;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .showAll-Img {
@@ -169,6 +170,7 @@ body {
 .showAllCase:hover .blurCover {
   opacity: 0.6;
   visibility: visible;
+  cursor: pointer;
 }
 
 .showAllCase h1 {
@@ -180,11 +182,13 @@ body {
   margin-top: 33vh;
   position: absolute;
   width: 27vw;
+  cursor: pointer;
 }
 
 .showAllCase:hover h1 {
   opacity: 1;
   z-index: 5;
+  cursor: pointer;
 }
 
 .showAllCase h1 span {
