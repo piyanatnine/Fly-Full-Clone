@@ -5,7 +5,7 @@
   padding-top: 0.2vw;
   position: fixed;
   margin: 0 0;
-  font-size: 1.3em;
+  font-size: 1.4vw;
   color: white;
   visibility: hidden;
   transition: margin-top 0.6s, visibility 0.7s;
@@ -18,14 +18,14 @@
 }
 
 #navBar div ul {
-  margin-top: 0.8em;
+  margin-top: 1vw;
   margin-left: 18vw;
 }
 
 #navBar div ul li {
   float: left;
   list-style: none;
-  margin-left: 2.8em;
+  margin-left: 3.4vw;
 }
 
 #navBar div ul li a {
@@ -71,4 +71,11 @@
   100% {
     filter: opacity(0.5);
   }
+}
+
+#navBarImg {
+  width: 5.4vw;
+  height: 6vw;
+  padding-top: 0.8vw;
+  padding-left: 2vw;
 }
